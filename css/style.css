@@ -1,0 +1,323 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Inicio: */
+
+body {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 2fr auto 1fr;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+}
+
+header {
+  background-color: #181619;
+  padding: 0 0 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  grid-area: header;
+}
+
+main {
+  grid-area: main;
+}
+
+footer {
+  grid-area: footer;
+}
+
+.titulo {
+  font-family: "Lobster", sans-serif;
+  text-align: center;
+  color: #e32f21;
+  margin: auto;
+}
+
+.nav_bar_uno {
+  margin: auto;
+}
+
+.nav_bar_dos {
+  font-size: 100%;
+}
+
+.buscador {
+  vertical-align: middle;
+  text-align: left;
+  margin: 1rem;
+  resize: none;
+  font-size: 140%;
+}
+
+.color_a {
+  color: #e4ded0;
+  font-family: "Six Caps", sans-serif;
+}
+
+.color_a:hover {
+  color: #e32f21;
+  text-decoration: underline;
+}
+
+.imagenes_inicio {
+  width: 30rem;
+  margin: 5rem 8rem;
+  max-width: 100%;
+}
+
+.imagenes_inicio_dos {
+  gap: 10px;
+}
+
+.titulo_centrado {
+  text-align: center;
+  padding: 1rem;
+  background-color: black;
+  color: white;
+}
+
+.main_inicio {
+  background-image: url("../images/fondo_ilusion_optica.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.main_ventas {
+  background-image: url("../images/ajedrez.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.main_contacto {
+  background-image: url("../images/3896.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.footer_inicio {
+  background-color: rgb(22, 22, 22);
+  color: rgb(255, 255, 255);
+}
+
+.flex_icons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 2rem 0 0 0;
+  font-size: 180%;
+}
+
+.grid_contacto {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.p_contacto {
+  font-size: 170%;
+  color: white;
+  text-align: center;
+  margin: 5rem 0;
+}
+
+.logo_ig {
+  color: #ff5f7c;
+  padding: 0 1rem;
+  margin: 0 0 0 3rem;
+}
+
+.logo_wpp {
+  color: #20c67a;
+  padding: 0 1rem;
+  margin: 0 0 0 8rem;
+}
+
+.contacto {
+  display: flex;
+  justify-content: center;
+  font-size: 120%;
+  padding: 1%;
+}
+
+.color_contacto {
+  color: #7fb1a8;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* para que el header se mueva agregar la R */
+
+/* Contacto: */
+
+.logo_pequeno {
+  width: 5rem;
+  margin: 5rem 8rem;
+  max-width: 100%;
+}
+
+/* buzos */
+
+.seccion_venta {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+
+.articulos {
+  display: flex;
+  flex: 0 1 300px;
+  flex-direction: column;
+  border: 1px solid black;
+  border-radius: 1rem;
+  padding: 2rem;
+}
+
+.articulos_color {
+  background-color: white;
+}
+
+.articulos .buzos {
+  order: -1;
+  align-self: center;
+}
+
+.articulos button {
+  background: black;
+  color: white;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 1rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+@media (min-width: 500px) {
+  .titulo {
+    color: #20c67a;
+    font-size: 5rem;
+  }
+
+  .nav_bar_uno {
+    margin: 10px 4rem 1px 4rem;
+  }
+
+  .nav_bar_dos {
+    font-size: 140%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .buscador {
+    vertical-align: middle;
+    text-align: left;
+    margin: 1rem;
+    resize: none;
+    font-size: 140%;
+  }
+
+  .buscador_dos {
+    display: flex;
+    justify-content: center;
+  }
+
+  .imagenes_inicio {
+    width: 30rem;
+    margin: 5rem 8rem;
+  }
+
+  .imagenes_inicio_dos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 100%;
+    height: auto;
+    gap: 10px;
+  }
+
+  .flex_icons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 2rem 0 0 0;
+    font-size: 180%;
+  }
+
+  .logo_ig {
+    color: #ff5f7c;
+    padding: 0 1rem;
+    margin: 0 0 0 3rem;
+  }
+
+  .logo_wpp {
+    color: #20c67a;
+    padding: 0 1rem;
+    margin: 0 0 0 8rem;
+  }
+
+  .contacto {
+    display: flex;
+    justify-content: center;
+    font-size: 120%;
+    padding: 1%;
+  }
+
+  .logo_pequeño {
+    max-width: 70%;
+    max-height: 70%;
+  }
+
+  .logo_contacto {
+    height: 6rem;
+    width: 6rem;
+  }
+
+  .seccion_venta {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+  }
+
+  .articulos {
+    display: flex;
+    flex: 0 1 300px;
+    flex-direction: column;
+    border: 1px solid black;
+    border-radius: 1rem;
+    padding: 2rem;
+  }
+
+  .articulos .buzos {
+    order: -1;
+    align-self: center;
+  }
+
+  .articulos button {
+    background: black;
+    color: white;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 1rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
+}
