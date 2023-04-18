@@ -114,9 +114,10 @@ footer {
   font-size: 180%;
 }
 
-.grid_contacto {
+.flex_contacto {
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
 }
 
@@ -125,6 +126,20 @@ footer {
   color: white;
   text-align: center;
   margin: 5rem 0;
+}
+
+.redes_contacto {
+  color: white;
+  font-size: 2rem;
+  text-decoration: none;
+}
+
+.margin_contacto {
+  padding: 0 5rem 0 6rem;
+}
+
+.margin_contacto2 {
+  padding: 0 0 4rem 0;
 }
 
 .logo_ig {
@@ -168,7 +183,7 @@ img {
 
 .logo_pequeno {
   width: 5rem;
-  margin: 5rem 8rem;
+  margin: 5rem 1rem;
   max-width: 100%;
 }
 
