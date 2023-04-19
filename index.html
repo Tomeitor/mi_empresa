@@ -8,7 +8,12 @@
 
     <link rel="stylesheet" href="css/style.css" />
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
 
     <!-- font awesome -->
     <link
@@ -19,32 +24,45 @@
       referrerpolicy="no-referrer"
     />
 
-    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Shrikhand&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&family=Shrikhand&display=swap"
+      rel="stylesheet"
+    />
     <title>suspicions</title>
-
   </head>
 
   <body>
     <header class="grid_item">
       <h1 class="titulo">Suspicions</h1>
       <nav>
-        <div>
-          <label for="buscador"></label>
-          <div class="buscador_dos">
-            <textarea class="buscador"
-              name="buscador"
-              id="buscador"
-              cols="30"
-              rows="1"
-              placeholder="Buscar..."
-            ></textarea>
-          </div>
+        <!-- aca habia un div sin cerrar -->
+
+        <label for="buscador"></label>
+        <div class="buscador_dos">
+          <textarea
+            class="buscador"
+            name="buscador"
+            cols="40"
+            rows="1"
+            placeholder="Buscar..."
+          ></textarea>
+        </div>
         <ul class="nav_bar_dos">
-          <li class="nav_bar_uno"><a class="color_a" href="index.html">Inicio</a></li>
-          <li class="nav_bar_uno"><a class="color_a" href="pages/remeras.html">Remeras</a></li>
-          <li class="nav_bar_uno"><a class="color_a" href="pages/buzos.html">Buzos</a></li>
-          <li class="nav_bar_uno"><a class="color_a" href="pages/pantalones.html">Pantalones</a></li>
-          <li class="nav_bar_uno"><a class="color_a" href="pages/contacto.html">Contacto</a></li>
+          <li class="nav_bar_uno">
+            <a class="color_a" href="index.html">Inicio</a>
+          </li>
+          <li class="nav_bar_uno">
+            <a class="color_a" href="pages/remeras.html">Remeras</a>
+          </li>
+          <li class="nav_bar_uno">
+            <a class="color_a" href="pages/buzos.html">Buzos</a>
+          </li>
+          <li class="nav_bar_uno">
+            <a class="color_a" href="pages/pantalones.html">Pantalones</a>
+          </li>
+          <li class="nav_bar_uno">
+            <a class="color_a" href="pages/contacto.html">Contacto</a>
+          </li>
         </ul>
       </nav>
     </header>
@@ -55,53 +73,60 @@
           <h2 class="titulo_centrado">Tu tienda de ropa</h2>
           <div class="imagenes_inicio_dos">
             <img
-            src="images/modelo_2.jpg"
-            alt="modelo con ropa 2"
-            class="imagenes_inicio"
+              src="images/modelo_2.jpg"
+              alt="modelo con ropa 2"
+              class="imagenes_inicio"
             />
-          <img
-            src="images/modelo_3.jpg"
-            alt="modelo con ropa 3"
-            class="imagenes_inicio"
+            <img
+              src="images/modelo_3.jpg"
+              alt="modelo con ropa 3"
+              class="imagenes_inicio"
             />
           </div>
           <div class="imagenes_inicio_dos">
             <img
-            src="images/modelo_4.jpg"
-            alt="modelo con ropa 4"
-            class="imagenes_inicio"
+              src="images/modelo_4.jpg"
+              alt="modelo con ropa 4"
+              class="imagenes_inicio"
             />
-          <img
-            src="images/modelo_1.jpg"
-            alt="modelo con ropa 1"
-            class="imagenes_inicio"
+            <img
+              src="images/modelo_1.jpg"
+              alt="modelo con ropa 1"
+              class="imagenes_inicio"
             />
           </div>
         </article>
       </section>
     </main>
-    
+
     <footer class="footer_inicio grid_item">
-
       <section>
-       
         <div class="flex_icons">
-          <a class="logo_ig" href="#"><i class="fa-brands fa-instagram"></i></a>
-          <p>@Suspicions</p>
-        
-        
-          <a class="logo_wpp" href="#"><i class="fa-brands fa-whatsapp"></i></a>
-          <p>+54 11 23456789</p>
-        </div>
+          <span class="flex_icons">
+            <a class="logo_ig" href="#">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <p class="p_ig">@Suspicions</p>
+          </span>
 
-        </section>
+          <span class="flex_icons">
+            <a class="logo_wpp" href="#">
+              <i class="fa-brands fa-whatsapp"></i>
+            </a>
+            <p class="p_wpp">+54 11 23456789</p>
+          </span>
+        </div>
+      </section>
 
       <div class="contacto">
         <a class="color_contacto" href="pages/contacto.html">Contacto</a>
       </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
-
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

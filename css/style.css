@@ -9,7 +9,7 @@
 body {
   display: grid;
   grid-template-columns: auto;
-  grid-template-rows: 2fr auto 1fr;
+  grid-template-rows: 1fr auto auto;
   grid-template-areas:
     "header"
     "main"
@@ -19,7 +19,6 @@ body {
 header {
   background-color: #181619;
   padding: 0 0 1rem 0;
-  position: sticky;
   top: 0;
   z-index: 2;
   grid-area: header;
@@ -37,7 +36,8 @@ footer {
   font-family: "Lobster", sans-serif;
   text-align: center;
   color: #e32f21;
-  margin: auto;
+  margin: 1rem 0 0 0;
+  font-size: 220%;
 }
 
 .nav_bar_uno {
@@ -51,14 +51,20 @@ footer {
 .buscador {
   vertical-align: middle;
   text-align: left;
-  margin: 1rem;
+  margin: 0 0 1rem 0;
   resize: none;
-  font-size: 140%;
+  font-size: 70%;
+}
+
+.buscador_dos {
+  display: flex;
+  justify-content: center;
 }
 
 .color_a {
   color: #e4ded0;
   font-family: "Six Caps", sans-serif;
+  text-decoration: none;
 }
 
 .color_a:hover {
@@ -67,13 +73,16 @@ footer {
 }
 
 .imagenes_inicio {
-  width: 30rem;
-  margin: 5rem 8rem;
+  width: 14rem;
+  margin: 2rem 10rem;
   max-width: 100%;
 }
 
 .imagenes_inicio_dos {
   gap: 10px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .titulo_centrado {
@@ -81,6 +90,7 @@ footer {
   padding: 1rem;
   background-color: black;
   color: white;
+  font-size: 120%;
 }
 
 .main_inicio {
@@ -110,19 +120,20 @@ footer {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  padding: 2rem 0 0 0;
-  font-size: 180%;
+  padding: 1rem 0 0 0;
+  font-size: 120%;
 }
 
 .flex_contacto {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
 }
 
 .p_contacto {
-  font-size: 170%;
+  font-size: 100%;
   color: white;
   text-align: center;
   margin: 5rem 0;
@@ -130,28 +141,36 @@ footer {
 
 .redes_contacto {
   color: white;
-  font-size: 2rem;
+  font-size: 130%;
   text-decoration: none;
 }
 
 .margin_contacto {
-  padding: 0 5rem 0 6rem;
+  padding: 0 10rem 0 10rem;
 }
 
 .margin_contacto2 {
-  padding: 0 0 4rem 0;
+  padding: 2rem 0 2rem 0;
+  font-size: 90%;
+}
+
+.p_ig {
+  padding: 0 3rem 0 0;
 }
 
 .logo_ig {
   color: #ff5f7c;
-  padding: 0 1rem;
-  margin: 0 0 0 3rem;
+  margin: 0 1rem 0 2rem;
+}
+
+.p_wpp {
+  padding: 0 2rem 0 0;
 }
 
 .logo_wpp {
   color: #20c67a;
-  padding: 0 1rem;
-  margin: 0 0 0 8rem;
+  padding: 0 0rem;
+  margin: 0 1rem 1rem 1rem;
 }
 
 .contacto {
@@ -159,10 +178,18 @@ footer {
   justify-content: center;
   font-size: 120%;
   padding: 1%;
+  flex-wrap: wrap;
 }
 
 .color_contacto {
-  color: #7fb1a8;
+  color: #3bb1ff;
+  text-decoration: none;
+  margin: 0 0 1rem 0;
+}
+
+.color_contacto:hover {
+  text-decoration: underline;
+  color: rgb(37, 211, 255);
 }
 
 ul {
@@ -182,8 +209,8 @@ img {
 /* Contacto: */
 
 .logo_pequeno {
-  width: 5rem;
-  margin: 5rem 1rem;
+  width: 3rem;
+  margin: 1rem 1rem;
   max-width: 100%;
 }
 
@@ -198,15 +225,17 @@ img {
 
 .articulos {
   display: flex;
-  flex: 0 1 300px;
   flex-direction: column;
+  flex: 0 1 300px;
   border: 1px solid black;
   border-radius: 1rem;
-  padding: 2rem;
+  padding: 1rem;
+  flex-wrap: wrap;
 }
 
 .articulos_color {
   background-color: white;
+  font-size: 120%;
 }
 
 .articulos .buzos {
@@ -224,14 +253,23 @@ img {
   cursor: pointer;
 }
 
-@media (min-width: 500px) {
+@media (min-width: 800px) {
+  header {
+    background-color: #181619;
+    padding: 0 0 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    grid-area: header;
+  }
+
   .titulo {
-    color: #20c67a;
     font-size: 5rem;
+    margin: auto;
   }
 
   .nav_bar_uno {
-    margin: 10px 4rem 1px 4rem;
+    margin: 1rem 4rem 0 4rem;
   }
 
   .nav_bar_dos {
@@ -244,9 +282,9 @@ img {
   .buscador {
     vertical-align: middle;
     text-align: left;
-    margin: 1rem;
+    margin: 1rem 0 0 0;
     resize: none;
-    font-size: 140%;
+    font-size: 100%;
   }
 
   .buscador_dos {
@@ -254,9 +292,11 @@ img {
     justify-content: center;
   }
 
-  .imagenes_inicio {
-    width: 30rem;
-    margin: 5rem 8rem;
+  .titulo_centrado {
+    text-align: center;
+    padding: 1rem;
+    background-color: black;
+    color: white;
   }
 
   .imagenes_inicio_dos {
@@ -265,21 +305,42 @@ img {
     flex-wrap: wrap;
     max-width: 100%;
     height: auto;
-    gap: 10px;
+    ga: 10rem;
+  }
+
+  .imagenes_inicio {
+    width: 30rem;
+    margin: 5rem 8rem;
+    max-width: 100%;
   }
 
   .flex_icons {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    padding: 2rem 0 0 0;
-    font-size: 180%;
+    padding: 1rem 0 0 0;
+    font-size: 130%;
+  }
+
+  .flex_contacto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .p_ig {
+    padding: 0 4rem 0 0;
   }
 
   .logo_ig {
     color: #ff5f7c;
     padding: 0 1rem;
     margin: 0 0 0 3rem;
+  }
+
+  .p_wpp {
+    padding: 0 4rem 0 0;
   }
 
   .logo_wpp {
@@ -295,9 +356,10 @@ img {
     padding: 1%;
   }
 
-  .logo_pequeño {
-    max-width: 70%;
-    max-height: 70%;
+  .logo_pequeno {
+    width: 5rem;
+    margin: 5rem 1rem;
+    max-width: 100%;
   }
 
   .logo_contacto {
@@ -319,6 +381,7 @@ img {
     border: 1px solid black;
     border-radius: 1rem;
     padding: 2rem;
+    flex-wrap: wrap;
   }
 
   .articulos .buzos {
@@ -334,5 +397,26 @@ img {
     border-radius: 1rem;
     font-size: 1.2rem;
     cursor: pointer;
+  }
+
+  .p_contacto {
+    font-size: 170%;
+    color: white;
+    text-align: center;
+    margin: 5rem 0;
+  }
+
+  .margin_contacto2 {
+    padding: 0 0 4rem 0;
+  }
+
+  .margin_contacto {
+    padding: 0 10rem 0 10rem;
+  }
+
+  .redes_contacto {
+    color: white;
+    font-size: 180%;
+    text-decoration: none;
   }
 }
