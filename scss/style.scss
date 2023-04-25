@@ -5,11 +5,15 @@
 }
 
 /* Inicio: */
+
 body {
   display: grid;
   grid-template-columns: auto;
   grid-template-rows: 1fr auto auto;
-  grid-template-areas: "header" "main" "footer";
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
 }
 
 header {
@@ -201,7 +205,9 @@ img {
 }
 
 /* para que el header se mueva agregar la R */
+
 /* Contacto: */
+
 .logo_pequeno {
   width: 3rem;
   margin: 1rem 1rem;
@@ -209,6 +215,7 @@ img {
 }
 
 /* buzos */
+
 .seccion_venta {
   display: flex;
   justify-content: center;
@@ -255,19 +262,23 @@ img {
     z-index: 2;
     grid-area: header;
   }
+
   .titulo {
     font-size: 5rem;
     margin: auto;
   }
+
   .nav_bar_uno {
     margin: 1rem 4rem 0 4rem;
   }
+
   .nav_bar_dos {
     font-size: 140%;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
   }
+
   .buscador {
     vertical-align: middle;
     text-align: left;
@@ -275,16 +286,19 @@ img {
     resize: none;
     font-size: 100%;
   }
+
   .buscador_dos {
     display: flex;
     justify-content: center;
   }
+
   .titulo_centrado {
     text-align: center;
     padding: 1rem;
     background-color: black;
     color: white;
   }
+
   .imagenes_inicio_dos {
     display: flex;
     justify-content: center;
@@ -293,11 +307,13 @@ img {
     height: auto;
     ga: 10rem;
   }
+
   .imagenes_inicio {
     width: 30rem;
     margin: 5rem 8rem;
     max-width: 100%;
   }
+
   .flex_icons {
     display: flex;
     justify-content: center;
@@ -305,49 +321,59 @@ img {
     padding: 1rem 0 0 0;
     font-size: 130%;
   }
+
   .flex_contacto {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
   }
+
   .p_ig {
     padding: 0 4rem 0 0;
   }
+
   .logo_ig {
     color: #ff5f7c;
     padding: 0 1rem;
     margin: 0 0 0 3rem;
   }
+
   .p_wpp {
     padding: 0 4rem 0 0;
   }
+
   .logo_wpp {
     color: #20c67a;
     padding: 0 1rem;
     margin: 0 0 0 8rem;
   }
+
   .contacto {
     display: flex;
     justify-content: center;
     font-size: 120%;
     padding: 1%;
   }
+
   .logo_pequeno {
     width: 5rem;
     margin: 5rem 1rem;
     max-width: 100%;
   }
+
   .logo_contacto {
     height: 6rem;
     width: 6rem;
   }
+
   .seccion_venta {
     display: flex;
     justify-content: center;
     gap: 3rem;
     flex-wrap: wrap;
   }
+
   .articulos {
     display: flex;
     flex: 0 1 300px;
@@ -357,10 +383,12 @@ img {
     padding: 2rem;
     flex-wrap: wrap;
   }
+
   .articulos .buzos {
     order: -1;
     align-self: center;
   }
+
   .articulos button {
     background: black;
     color: white;
@@ -370,23 +398,25 @@ img {
     font-size: 1.2rem;
     cursor: pointer;
   }
+
   .p_contacto {
     font-size: 170%;
     color: white;
     text-align: center;
     margin: 5rem 0;
   }
+
   .margin_contacto2 {
     padding: 0 0 4rem 0;
   }
+
   .margin_contacto {
     padding: 0 10rem 0 10rem;
   }
+
   .redes_contacto {
     color: white;
     font-size: 180%;
     text-decoration: none;
   }
 }
-
-/*# sourceMappingURL=style.css.map */
