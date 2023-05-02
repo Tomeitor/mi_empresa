@@ -1,0 +1,150 @@
+body {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 1fr auto auto;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+}
+
+/* _-_HEADER_-_ */
+
+header {
+  background-color: #181619;
+  padding: 0 0 1rem 0;
+  top: 0;
+  z-index: 2;
+  grid-area: header;
+}
+
+main {
+  grid-area: main;
+}
+
+footer {
+  grid-area: footer;
+}
+
+.titulo {
+  font-family: "Lobster", sans-serif;
+  text-align: center;
+  color: #e32f21;
+  margin: 1rem 0 0 0;
+  font-size: 220%;
+}
+
+.nav_bar_uno {
+  margin: auto;
+}
+
+.nav_bar_dos {
+  font-size: 100%;
+}
+
+.color_a {
+  color: #e4ded0;
+  font-family: "Six Caps", sans-serif;
+  text-decoration: none;
+}
+
+.color_a:hover {
+  color: #e32f21;
+  text-decoration: underline;
+}
+
+.buscador {
+  vertical-align: middle;
+  text-align: left;
+  margin: 0 0 1rem 0;
+  resize: none;
+  font-size: 70%;
+  width: 25rem;
+}
+
+.buscador_dos {
+  display: flex;
+  justify-content: center;
+}
+
+/* _-_MAIN_-_ */
+
+.main_inicio {
+  background-image: url("../images/fondo_ilusion_optica.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.titulo_centrado {
+  text-align: center;
+  padding: 1rem;
+  background-color: black;
+  color: white;
+  font-size: 120%;
+}
+
+.imagenes_inicio {
+  width: 14rem;
+  margin: 2rem 10rem;
+  max-width: 100%;
+}
+
+.imagenes_inicio_dos {
+  gap: 10px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* _-_FOOTER_-_ */
+
+.footer_inicio {
+  background-color: rgb(22, 22, 22);
+  color: white;
+}
+
+.flex_icons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 1rem 0 0 0;
+  font-size: 120%;
+}
+
+.p_ig {
+  padding: 0 3rem 0 0;
+}
+
+.logo_ig {
+  color: #ff5f7c;
+  margin: 0 1rem 0 2rem;
+}
+
+.p_wpp {
+  padding: 0 2rem 0 0;
+}
+
+.logo_wpp {
+  color: #20c67a;
+  padding: 0 0rem;
+  margin: 0 1rem 1rem 1rem;
+}
+
+.contacto {
+  display: flex;
+  justify-content: center;
+  font-size: 120%;
+  padding: 1%;
+  flex-wrap: wrap;
+}
+
+.color_contacto {
+  color: #3bb1ff;
+  text-decoration: none;
+  margin: 0 0 1rem 0;
+}
+
+.color_contacto:hover {
+  text-decoration: underline;
+  color: rgb(37, 211, 255);
+}

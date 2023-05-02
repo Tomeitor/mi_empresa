@@ -1,0 +1,44 @@
+/* .................... TIENDA .................... */
+
+.main_ventas {
+  background-image: url("../images/ajedrez.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.articulos {
+  display: flex;
+  flex-direction: column;
+  flex: 0 1 300px;
+  border: 1px solid black;
+  border-radius: 1rem;
+  padding: 1rem;
+  flex-wrap: wrap;
+}
+
+.seccion_venta {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+
+.articulos_color {
+  background-color: white;
+  font-size: 120%;
+}
+
+.articulos .buzos {
+  order: -1;
+  align-self: center;
+}
+
+.articulos button {
+  background: black;
+  color: white;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 1rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
