@@ -61,6 +61,7 @@ footer {
   color: #e4ded0;
   font-family: "Six Caps", sans-serif;
   text-decoration: none;
+  transition: color 0.3s;
 }
 
 .color_a:hover {
@@ -79,6 +80,8 @@ footer {
 
 .buscador_dos {
   display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
   justify-content: center;
 }
 
@@ -95,8 +98,19 @@ footer {
   background-color: black;
   color: white;
   font-size: 120%;
+  animation: titulo_desplazado 1.5s ease;
 }
 
+@keyframes titulo_desplazado {
+  0% {
+    opacity: 0;
+    transform: translate(80px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(80px);
+  }
+}
 .imagenes_inicio {
   width: 14rem;
   margin: 2rem 10rem;
@@ -104,22 +118,24 @@ footer {
 }
 
 .imagenes_inicio_dos {
-  gap: 10px;
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10px;
 }
 
 /* _-_FOOTER_-_ */
 .footer_inicio {
-  background-color: rgb(22, 22, 22);
+  background-color: #181619;
   color: white;
 }
 
 .flex_icons {
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
   padding: 1rem 0 0 0;
   font-size: 120%;
 }
@@ -145,21 +161,23 @@ footer {
 
 .contacto {
   display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
   justify-content: center;
   font-size: 120%;
   padding: 1%;
-  flex-wrap: wrap;
 }
 
 .color_contacto {
   color: #3bb1ff;
   text-decoration: none;
   margin: 0 0 1rem 0;
+  transition: color 1s;
 }
 
 .color_contacto:hover {
   text-decoration: underline;
-  color: rgb(37, 211, 255);
+  color: rgb(50, 241, 255);
 }
 
 /* .................... Contacto .................... */
@@ -179,10 +197,10 @@ footer {
 
 .flex_contacto {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
 }
 
 .redes_contacto {
@@ -215,19 +233,21 @@ footer {
 
 .articulos {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
+  justify-content: center;
   flex: 0 1 300px;
   border: 1px solid black;
   border-radius: 1rem;
   padding: 1rem;
-  flex-wrap: wrap;
 }
 
 .seccion_venta {
   display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
   justify-content: center;
   gap: 3rem;
-  flex-wrap: wrap;
 }
 
 .articulos_color {

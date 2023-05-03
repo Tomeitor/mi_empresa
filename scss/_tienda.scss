@@ -7,20 +7,16 @@
 }
 
 .articulos {
-  display: flex;
-  flex-direction: column;
+  @include flex-general(column, center);
   flex: 0 1 300px;
   border: 1px solid black;
   border-radius: 1rem;
   padding: 1rem;
-  flex-wrap: wrap;
 }
 
 .seccion_venta {
-  display: flex;
-  justify-content: center;
+  @include flex-general(row, center);
   gap: 3rem;
-  flex-wrap: wrap;
 }
 
 .articulos_color {

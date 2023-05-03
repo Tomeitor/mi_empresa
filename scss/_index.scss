@@ -11,7 +11,7 @@ body {
 /* _-_HEADER_-_ */
 
 header {
-  background-color: #181619;
+  background-color: $gris;
   padding: 0 0 1rem 0;
   top: 0;
   z-index: 2;
@@ -29,7 +29,7 @@ footer {
 .titulo {
   font-family: "Lobster", sans-serif;
   text-align: center;
-  color: #e32f21;
+  color: $rojo;
   margin: 1rem 0 0 0;
   font-size: 220%;
 }
@@ -46,11 +46,12 @@ footer {
   color: #e4ded0;
   font-family: "Six Caps", sans-serif;
   text-decoration: none;
-}
+  transition: color 0.3s;
 
-.color_a:hover {
-  color: #e32f21;
-  text-decoration: underline;
+  &:hover {
+    color: #e32f21;
+    text-decoration: underline;
+  }
 }
 
 .buscador {
@@ -63,8 +64,7 @@ footer {
 }
 
 .buscador_dos {
-  display: flex;
-  justify-content: center;
+  @include flex-general(row, center);
 }
 
 /* _-_MAIN_-_ */
@@ -90,23 +90,19 @@ footer {
 }
 
 .imagenes_inicio_dos {
+  @include flex-general(row, center);
   gap: 10px;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
 }
 
 /* _-_FOOTER_-_ */
 
 .footer_inicio {
-  background-color: rgb(22, 22, 22);
+  background-color: $gris;
   color: white;
 }
 
 .flex_icons {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+  @include flex-general(row, center);
   padding: 1rem 0 0 0;
   font-size: 120%;
 }
@@ -131,20 +127,19 @@ footer {
 }
 
 .contacto {
-  display: flex;
-  justify-content: center;
+  @include flex-general(row, center);
   font-size: 120%;
   padding: 1%;
-  flex-wrap: wrap;
 }
 
 .color_contacto {
   color: #3bb1ff;
   text-decoration: none;
   margin: 0 0 1rem 0;
-}
+  transition: color 1s;
 
-.color_contacto:hover {
-  text-decoration: underline;
-  color: rgb(37, 211, 255);
+  &:hover {
+    text-decoration: underline;
+    color: rgb(50, 241, 255);
+  }
 }

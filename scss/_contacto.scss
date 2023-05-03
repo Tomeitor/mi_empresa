@@ -15,11 +15,8 @@
 }
 
 .flex_contacto {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+  @include flex-general(row, center);
   align-items: center;
-  flex-wrap: wrap;
 }
 
 .redes_contacto {
