@@ -32,6 +32,7 @@
     margin: 1rem 0 0 0;
     resize: none;
     font-size: 100%;
+    width: 25rem;
   }
 
   .buscador_dos {
@@ -82,7 +83,7 @@
   .logo_ig {
     color: #ff5f7c;
     padding: 0 1rem;
-    margin: 0 0 0 3rem;
+    margin: 0 0 0 7rem;
   }
 
   .p_wpp {
@@ -92,7 +93,7 @@
   .logo_wpp {
     color: #20c67a;
     padding: 0 1rem;
-    margin: 0 0 0 8rem;
+    margin: 0 0 0 12rem;
   }
 
   .contacto {
@@ -118,6 +119,12 @@
     justify-content: center;
     gap: 3rem;
     flex-wrap: wrap;
+    margin: 1rem 0;
+  }
+
+  .articulos_color {
+    background-color: white;
+    font-size: 120%;
   }
 
   .articulos {
@@ -125,7 +132,7 @@
     flex: 0 1 300px;
     flex-direction: column;
     border: 1px solid black;
-    border-radius: 1rem;
+    border-radius: 10px;
     padding: 2rem;
     flex-wrap: wrap;
   }
@@ -136,13 +143,33 @@
   }
 
   .articulos button {
-    background: black;
+    background: rgb(92, 92, 92);
+    color: white;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 1px;
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
+
+  .articulos .a_comprar {
+    background: rgb(92, 92, 92);
     color: white;
     padding: 0.5rem;
     border: none;
     border-radius: 1rem;
     font-size: 1.2rem;
     cursor: pointer;
+  }
+
+  .tienda_espacio {
+    margin: 0 0 2rem 0;
+    text-align: center;
+  }
+
+  .tienda_titulo {
+    text-decoration: underline;
+    color: black;
   }
 
   .p_contacto {

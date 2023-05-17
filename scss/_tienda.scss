@@ -1,22 +1,30 @@
 /* .................... TIENDA .................... */
 
 .main_ventas {
-  background-image: url("../images/ajedrez.jpg");
+  background-image: url("../images/fondo_blanco_3.webp");
   background-size: cover;
   background-position: center;
+  border-radius: 0;
 }
 
 .articulos {
   @include flex-general(column, center);
-  flex: 0 1 300px;
+  flex: 0 1 180px;
   border: 1px solid black;
   border-radius: 1rem;
   padding: 1rem;
 }
 
+.tienda_subtitulo {
+  margin: 2rem 0 0 0;
+  font-family: "pirata one", cursive;
+  text-decoration: underline 3px $rojo2;
+}
+
 .seccion_venta {
   @include flex-general(row, center);
-  gap: 3rem;
+  gap: 1rem;
+  margin: 1rem 0;
 }
 
 .articulos_color {
@@ -37,4 +45,24 @@
   border-radius: 1rem;
   font-size: 1.2rem;
   cursor: pointer;
+}
+
+.articulos .a_comprar {
+  background: rgb(92, 92, 92);
+  color: white;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 1rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.tienda_espacio {
+  margin: 0 0 2rem 0;
+  text-align: center;
+}
+
+.tienda_titulo {
+  text-decoration: underline;
+  color: black;
 }

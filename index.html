@@ -42,10 +42,14 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
 
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <!-- Google fonts -->
     <link
-      href="https://fonts.googleapis.com/css2?family=Lobster&family=Shrikhand&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Bokor&family=Lobster&family=Pirata+One&family=Shrikhand&family=UnifrakturCook:wght@700&display=swap"
       rel="stylesheet"
     />
+    <!-- Google fonts -->
     <title>suspicions</title>
   </head>
 
@@ -87,16 +91,100 @@
     <main class="main_inicio grid_item">
       <section>
         <article>
-          <h2 class="titulo_centrado animate_animated animate__heartBeat">
+          <h2
+            data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="500"
+            class="titulo_centrado"
+          >
             Tu tienda de ropa
           </h2>
+
+          <div class="container-carousel animate__animated animate__pulse">
+            <div id="carouselExampleIndicators" class="carousel slide">
+              <div class="carousel-indicators">
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide-to="0"
+                  class="active"
+                  aria-current="true"
+                  aria-label="Slide 1"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide-to="1"
+                  aria-label="Slide 2"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide-to="2"
+                  aria-label="Slide 3"
+                ></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    src="images/carrusel1.jpg"
+                    class="d-block"
+                    alt="modelo carrusel 1"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="images/carrusel2.jpg"
+                    class="d-block"
+                    alt="modelo carrusel 2"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="images/carrusel3.jpg"
+                    class="d-block"
+                    alt="modelo carrusel 3"
+                  />
+                </div>
+                <div>
+                  <button
+                    class="carousel-control-prev"
+                    type="button"
+                    data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev"
+                  >
+                    <span
+                      class="carousel-control-prev-icon"
+                      aria-hidden="true"
+                    ></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button
+                    class="carousel-control-next"
+                    type="button"
+                    data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next"
+                  >
+                    <span
+                      class="carousel-control-next-icon"
+                      aria-hidden="true"
+                    ></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
           <div class="imagenes_inicio_dos">
             <img
+              data-aos="zoom-in"
               src="images/modelo_2.jpg"
               alt="modelo con ropa 2"
               class="imagenes_inicio"
             />
             <img
+              data-aos="zoom-in"
               src="images/modelo_3.jpg"
               alt="modelo con ropa 3"
               class="imagenes_inicio"
@@ -104,11 +192,13 @@
           </div>
           <div class="imagenes_inicio_dos">
             <img
+              data-aos="zoom-in"
               src="images/modelo_4.jpg"
               alt="modelo con ropa 4"
               class="imagenes_inicio"
             />
             <img
+              data-aos="zoom-in"
               src="images/modelo_1.jpg"
               alt="modelo con ropa 1"
               class="imagenes_inicio"
@@ -121,14 +211,14 @@
     <footer class="footer_inicio grid_item">
       <section>
         <div class="flex_icons">
-          <span class="flex_icons">
+          <span data-aos="zoom-in" class="flex_icons">
             <a class="logo_ig" href="#">
               <i class="fa-brands fa-instagram"></i>
             </a>
             <p class="p_ig">@Suspicions</p>
           </span>
 
-          <span class="flex_icons">
+          <span data-aos="zoom-in" class="flex_icons">
             <a class="logo_wpp" href="#">
               <i class="fa-brands fa-whatsapp"></i>
             </a>
@@ -147,5 +237,9 @@
       integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
       crossorigin="anonymous"
     ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
