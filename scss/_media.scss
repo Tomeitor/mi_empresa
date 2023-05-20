@@ -238,7 +238,7 @@
   }
 
   .ultima_seccion_venta {
-    margin: 0 0 3rem 0;
+    margin: 0 0 0 0;
   }
 
   .articulos_color {
@@ -296,6 +296,54 @@
     margin: 2rem 0 0 0;
     font-family: "pirata one", cursive;
     text-decoration: underline 3px $rojo2;
+  }
+
+  .tomy1 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .tomy2 {
+    padding: 3rem 0 2rem 0;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .tomy3 {
+    display: flex;
+    flex-direction: row;
+    margin: 2rem 0 4rem 0;
+    background-color: rgba(255, 255, 255, 0.493);
+    border-radius: 10px;
+    padding: 0 40px 0 0;
+  }
+
+  .p_tomy {
+    font-size: 80%;
+    color: rgba(58, 58, 58, 0.849);
+  }
+
+  .h2_tomy {
+    font-family: "Libre Baskerville", serif;
+    text-shadow: 0.4px 0.4px #18181881, 1px 1px rgba(59, 59, 59, 0.39);
+    font-size: 130%;
+  }
+
+  .separador_tomy {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    margin: 0 2rem;
+  }
+
+  .separador_tomy2 {
+    font-size: 3rem;
+  }
+
+  .icono_tomy {
+    padding: 3px 0 0 0;
+    margin: 0 2rem;
+    font-size: 3rem;
   }
 
   .p_contacto {

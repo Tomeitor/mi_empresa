@@ -19,6 +19,7 @@
     <link rel="shortcut icon" href="images/descarga.png" type="image/x-icon" />
 
     <link rel="stylesheet" href="../css/style.css" />
+    <script src="../javascript/script.js"></script>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
 
@@ -62,7 +63,7 @@
   </head>
   <body>
     <header>
-      <h1 class="titulo">Suspicions</h1>
+      <h1 id="logo" class="titulo">Suspicions</h1>
       <nav>
 
         <form class="search" action="">
@@ -87,41 +88,327 @@
 
     <main class="main_ventas">
 
-      <div class="articulos">
-        <section class="seccion_venta">
-          <article class="articulos articulos_color">
-            <h2>pantalon beige</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore qui tenetur dolorem est commodi!</p>
-            
-            <img class="buzos" src="../images/pantalon_beige.webp" alt="pantalon beige" />
-            <button>COMPRAR</button>
-          </article>
-        
-          <article class="articulos articulos_color">
-            <h2>pantalon blanco</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore qui tenetur dolorem est commodi!</p>
-            
-            <img class="buzos" src="../images/pantalon_blanco.jpg" alt="pantalon blanco"/>
-            <button>COMPRAR</button>
-          </article>
-        
-          <article class="articulos articulos_color">
-            <h2>pantalon cafe</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore qui tenetur dolorem est commodi!</p>
-            
-            <img class="buzos" src="../images/pantalon_cafe1.jpg" alt="pantalon cafe" />
-            <button>COMPRAR</button>
-          </article>
-        
-          <article class="articulos articulos_color">
-            <h2>pantalon negro</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore qui tenetur dolorem est commodi!</p>
-            
-            <img class="buzos" src="../images/pantalon_negro.jpg" alt="pantalon negro" />
-            <p>precio</p>
-            <button>COMPRAR</button>
-          </article>
-        </div>
+      <section>
+        <div>
+          <h2
+            class="container tienda_subtitulo shadow-drop-center animate__animated animate__pulse"
+          >
+            Pantalones:
+          </h2>
+          <div class="seccion_venta">
+            <!-- Seccion 1 -->
+            <div class="seccion_venta">
+              <article class="articulos articulos_color">
+                <a href="#">
+                  <img
+                    data-aos="zoom-in"
+                    class="buzos"
+                    src="../images/pantalon_bst_denim.webp"
+                    alt="Pantalon bst denim"
+                  />
+                  <h4 class="tienda_espacio tienda_titulo">
+                    Pantalon: <br />
+                    Bst denim
+                  </h4>
+                </a>
+  
+                <p class="tienda_espacio">$15.200</p>
+  
+                <a href="#" class="a_comprar btn btn-outline-dark"> Comprar </a>
+              </article>
+  
+              <article class="articulos articulos_color">
+                <a href="#">
+                  <img
+                    data-aos="zoom-in"
+                    class="buzos"
+                    src="../images/pantalon-revers1.webp"
+                    alt="Pantalon revers"
+                  />
+                  <h4 class="tienda_espacio tienda_titulo">
+                    Pantalon: <br />
+                    Revers
+                  </h4>
+                </a>
+                <p class="tienda_espacio">$14.400</p>
+                <a href="#" class="a_comprar btn btn-outline-dark"> Comprar </a>
+              </article>
+  
+              <article class="articulos articulos_color">
+                <a href="#">
+                  <img
+                    data-aos="zoom-in"
+                    class="buzos"
+                    src="../images/pantalon-babucha-bat.webp"
+                    alt="Pantalon babucha bat"
+                  />
+                  <h4 class="tienda_espacio tienda_titulo">
+                    Pantalon: <br />
+                    Babucha bat
+                  </h4>
+                </a>
+                <p class="tienda_espacio">$12.600</p>
+                <a href="#" class="a_comprar btn btn-outline-dark"> Comprar </a>
+              </article>
+  
+              <article class="articulos articulos_color">
+                <a href="#">
+                  <img
+                    data-aos="zoom-in"
+                    class="buzos"
+                    src="../images/pantalon-babucha-better.webp"
+                    alt="Pantalon babucha better"
+                  />
+                  <h4 class="tienda_espacio tienda_titulo">
+                    Pantalon: <br />
+                    Babucha better
+                  </h4>
+                </a>
+                <p class="tienda_espacio">$12.600</p>
+                <a href="#" class="a_comprar btn btn-outline-dark"> Comprar </a>
+              </article>
+            </div>
+            <!-- Seccion 1 -->
+  
+            <!-- Seccion 2 -->
+            <div class="seccion_venta">
+              <article class="articulos articulos_color">
+                <a href="#">
+                  <img
+                    data-aos="zoom-in"
+                    class="buzos"
+                    src="../images/pantalon-babucha-geek.webp"
+                    alt="Pantalon babucha geek"
+                  />
+                  <h4 class="tienda_espacio tienda_titulo">
+                    Pantalon: <br />
+                    Babucha geek
+                  </h4>
+                </a>
+                <p class="tienda_espacio">$12.600</p>
+                <a href="#" class="a_comprar btn btn-outline-dark"> Comprar </a>
+              </article>
+  
+              <article class="articulos articulos_color">
+                <a href="#">
+                  <img
+                    data-aos="zoom-in"
+                    class="buzos"
+                    src="../images/pantalon-babucha-michael.webp"
+                    alt="Pantalon babucha michael"
+                  />
+                  <h4 class="tienda_espacio tienda_titulo">
+                    Pantalon: <br />Babucha michael
+                  </h4>
+                </a>
+                <p class="tienda_espacio">$12.600</p>
+                <a href="#" class="a_comprar btn btn-outline-dark"> Comprar </a>
+              </article>
+  
+              <article class="articulos articulos_color">
+                <a href="#">
+                  <img
+                    data-aos="zoom-in"
+                    class="buzos"
+                    src="../images/pantalon-babucha-quantic.webp"
+                    alt="Pantalon babucha quantic"
+                  />
+                  <h4 class="tienda_espacio tienda_titulo">
+                    Pantalon: <br />Babucha quantic
+                  </h4>
+                </a>
+                <p class="tienda_espacio">$12.600</p>
+                <a href="#" class="a_comprar btn btn-outline-dark"> Comprar </a>
+              </article>
+  
+              <article class="articulos articulos_color">
+                <a href="#">
+                  <img
+                    data-aos="zoom-in"
+                    class="buzos"
+                    src="../images/pantalon-barden.webp"
+                    alt="Pantalon barden"
+                  />
+                  <h4 class="tienda_espacio tienda_titulo">
+                    Pantalon: <br />Barden
+                  </h4>
+                </a>
+                <p class="tienda_espacio">$13.100</p>
+  
+                <a href="#" class="a_comprar btn btn-outline-dark"> Comprar </a>
+              </article>
+            </div>
+            <!-- Seccion 2 -->
+  
+            <!-- Seccion 3 -->
+            <div class="seccion_venta">
+              <article class="articulos articulos_color">
+                <a href="#">
+                  <img
+                    data-aos="zoom-in"
+                    class="buzos"
+                    src="../images/pantalon-babucha-south.webp"
+                    alt="Pantalon babucha south"
+                  />
+                  <h4 class="tienda_espacio tienda_titulo">
+                    Pantalon: <br />South
+                  </h4>
+                </a>
+                <p class="tienda_espacio">$11.500</p>
+                <a href="#" class="a_comprar btn btn-outline-dark"> Comprar </a>
+              </article>
+  
+              <article class="articulos articulos_color">
+                <a href="#">
+                  <img
+                    data-aos="zoom-in"
+                    class="buzos"
+                    src="../images/pantalon-babucha-thunder.webp"
+                    alt="Pantalon babucha thunder"
+                  />
+                  <h4 class="tienda_espacio tienda_titulo">
+                    Pantalon: <br />Babucha thunder
+                  </h4>
+                </a>
+                <p class="tienda_espacio">$12.600</p>
+                <a href="#" class="a_comprar btn btn-outline-dark"> Comprar </a>
+              </article>
+  
+              <article class="articulos articulos_color">
+                <a href="#">
+                  <img
+                    data-aos="zoom-in"
+                    class="buzos"
+                    src="../images/pantalon-emilia.webp"
+                    alt="Pantalon emilia"
+                  />
+                  <h4 class="tienda_espacio tienda_titulo">
+                    Pantalon: <br />Emilia
+                  </h4>
+                </a>
+                <p class="tienda_espacio">$12.300</p>
+                <a href="#" class="a_comprar btn btn-outline-dark"> Comprar </a>
+              </article>
+  
+              <article class="articulos articulos_color">
+                <a href="#">
+                  <img
+                    data-aos="zoom-in"
+                    class="buzos"
+                    src="../images/pantalon-france.webp"
+                    alt="Pantalon france"
+                  />
+                  <h4 class="tienda_espacio tienda_titulo">
+                    Pantalon: <br />France
+                  </h4>
+                </a>
+                <p class="tienda_espacio">$14.300</p>
+                <a href="#" class="a_comprar btn btn-outline-dark"> Comprar </a>
+              </article>
+            </div>
+            <!-- Seccion 3 -->
+             <!-- Seccion 4 -->
+             <div class="seccion_venta ultima_seccion_venta">
+              <article class="articulos articulos_color">
+                <a href="#">
+                  <img
+                    data-aos="zoom-in"
+                    class="buzos"
+                    src="../images/pantalon-jaune.webp"
+                    alt="Pantalon jaune"
+                  />
+                  <h4 class="tienda_espacio tienda_titulo">
+                    Pantalon: <br />jaune
+                  </h4>
+                </a>
+                <p class="tienda_espacio">$13.500</p>
+                <a href="#" class="a_comprar btn btn-outline-dark"> Comprar </a>
+              </article>
+  
+              <article class="articulos articulos_color">
+                <a href="#">
+                  <img
+                    data-aos="zoom-in"
+                    class="buzos"
+                    src="../images/pantalon-jogger-apocalypse.webp"
+                    alt="Pantalon jogger apocalypse"
+                  />
+                  <h4 class="tienda_espacio tienda_titulo">
+                    Pantalon: <br />Jogger apocalypse
+                  </h4>
+                </a>
+                <p class="tienda_espacio">$13.100</p>
+                <a href="#" class="a_comprar btn btn-outline-dark"> Comprar </a>
+              </article>
+  
+              <article class="articulos articulos_color">
+                <a href="#">
+                  <img
+                    data-aos="zoom-in"
+                    class="buzos"
+                    src="../images/pantalon-jogger-nas.webp"
+                    alt="Pantalon jogger nas"
+                  />
+                  <h4 class="tienda_espacio tienda_titulo">
+                    Pantalon: <br />Jogger nas
+                  </h4>
+                </a>
+                <p class="tienda_espacio">$13.100</p>
+                <a href="#" class="a_comprar btn btn-outline-dark"> Comprar </a>
+              </article>
+  
+              <article class="articulos articulos_color">
+                <a href="#">
+                  <img
+                    data-aos="zoom-in"
+                    class="buzos"
+                    src="../images/pantalon-velvet.webp"
+                    alt="Pantalon velvet"
+                  />
+                  <h4 class="tienda_espacio tienda_titulo">
+                    Pantalon: <br />Velvet
+                  </h4>
+                </a>
+                <p class="tienda_espacio">$14.300</p>
+                <a href="#" class="a_comprar btn btn-outline-dark"> Comprar </a>
+              </article>
+            </div>
+          
+            <!-- Seccion 4 -->
+            <div>
+              <section data-aos="fade-up"
+              data-aos-duration="1000" class="tomy3">
+                <div class="tomy2">
+                  <i class="fa-solid fa-3x fa-truck icono_tomy"></i>
+                  <div class="tomy1">
+                    <h2 class="h2_tomy">Envios a todo el país</h2>
+                    <p class="p_tomy">
+                     Envios gratis en compras superiores a $30.000
+                    </p>
+                  </div>
+                </div>
+                <div class="separador_tomy"><p class="separador_tomy2">│</p></div>
+                <div class="tomy2">
+                  <i class="fa-regular fa-3x fa-credit-card icono_tomy"></i>
+                  <div class="tomy1">
+                    <h2 class="h2_tomy">Paga como quieras</h2>
+                    <p class="p_tomy">
+                      Aceptamos tarjetas de credito y debito
+                    </p>
+                  </div>
+                </div>
+                <div class="separador_tomy"><p class="separador_tomy2">│</p></div>
+                <div class="tomy2">
+                    <i class="fa-solid fa-3x fa-lock icono_tomy"></i>
+                  <div class="tomy1">
+                    <h2 class="h2_tomy">Compras seguras</h2>
+                    <p class="p_tomy">
+                      Tus compras y tus datos estan protegidos
+                    </p>
+                  </div>
+                </div>
+              </section>
+            </div>
     </main>
 
     <footer class="footer-distributed">
