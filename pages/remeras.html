@@ -32,6 +32,11 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
 
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
     <!-- font awesome -->
@@ -48,6 +53,18 @@
       rel="stylesheet"
     />
     <!-- Google fonts -->
+    <!-- footer -->
+    <link
+      rel="stylesheet"
+      href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"
+    />
+
+    <link
+      href="http://fonts.googleapis.com/css?family=Cookie"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- footer -->
     <title>suspicions remeras</title>
   </head>
   <body>
@@ -55,14 +72,15 @@
       <h1 class="titulo">Suspicions</h1>
 
       <nav>
-        <div class="buscador_dos">
+        <form class="search" action="">
           <input
-            class="buscador"
-            type="text"
-            name="buscador"
+            class="input_search"
+            type="search"
             placeholder="Buscar..."
+            required
           />
-        </div>
+          <button class="button_search" type="submit">Search</button>
+        </form>
 
         <ul class="nav_bar_dos">
           <li class="nav_bar_uno">
@@ -85,9 +103,14 @@
     </header>
 
     <main class="main_ventas">
+      <section>
       <div>
-        <h2 class="container tienda_subtitulo">Remeras:</h2>
-        <section class="seccion_venta">
+        <h2
+          class="container tienda_subtitulo shadow-drop-center animate__animated animate__pulse"
+        >
+          Remeras:
+        </h2>
+        <div class="seccion_venta">
           <!-- Seccion 1 -->
           <div class="seccion_venta">
             <article class="articulos articulos_color">
@@ -299,32 +322,203 @@
             </article>
           </div>
           <!-- Seccion 3 -->
-        </section>
+           <!-- Seccion 4 -->
+           <div class="seccion_venta ultima_seccion_venta">
+            <article class="articulos articulos_color">
+              <a href="#">
+                <img
+                  data-aos="zoom-in"
+                  class="buzos"
+                  src="../images/remera_happening.webp"
+                  alt="remera happening"
+                />
+                <h4 class="tienda_espacio tienda_titulo">
+                  Remera: <br />Happening
+                </h4>
+              </a>
+              <p class="tienda_espacio">$7.999</p>
+              <a href="#" class="a_comprar btn btn-outline-dark"> Comprar </a>
+            </article>
+
+            <article class="articulos articulos_color">
+              <a href="#">
+                <img
+                  data-aos="zoom-in"
+                  class="buzos"
+                  src="../images/remera_heat_not_hot.webp"
+                  alt="remera heat not hot"
+                />
+                <h4 class="tienda_espacio tienda_titulo">
+                  Remera: <br />Heat not hot
+                </h4>
+              </a>
+              <p class="tienda_espacio">$7.999</p>
+              <a href="#" class="a_comprar btn btn-outline-dark"> Comprar </a>
+            </article>
+
+            <article class="articulos articulos_color">
+              <a href="#">
+                <img
+                  data-aos="zoom-in"
+                  class="buzos"
+                  src="../images/remera_og-trash_bordada.webp"
+                  alt="remera og trash bordada"
+                />
+                <h4 class="tienda_espacio tienda_titulo">
+                  Remera: <br />Og trash bordada
+                </h4>
+              </a>
+              <p class="tienda_espacio">$7.999</p>
+              <a href="#" class="a_comprar btn btn-outline-dark"> Comprar </a>
+            </article>
+
+            <article class="articulos articulos_color">
+              <a href="#">
+                <img
+                  data-aos="zoom-in"
+                  class="buzos"
+                  src="../images/remera_sinner.webp"
+                  alt="remera sinner"
+                />
+                <h4 class="tienda_espacio tienda_titulo">
+                  Remera: <br />Sinner
+                </h4>
+              </a>
+              <p class="tienda_espacio">$7.999</p>
+              <a href="#" class="a_comprar btn btn-outline-dark"> Comprar </a>
+            </article>
+          </div>
+        
+          <!-- Seccion 4 -->
+
+<!-- pppppppppppppppppppppppppppppppppppppppppppp -->
+
+<div class="container_tienda">
+  <section id="features">
+    <div class="grid">
+      <div class="icon"><i class="fa fa-3x fa-fire"></i></div>
+      <div class="desc">
+        <h2>HAMBURGESAS DE ALTA CALIDAD</h2>
+        <p>
+          Tenemos los mejores proveedores y toda la maquinaria necesaria para las mejores hamburguesas del pais.
+        </p>
       </div>
+    </div>
+    <div class="grid">
+      <div class="icon"><i class="fa fa-3x fa-truck"></i></div>
+      <div class="desc">
+        <h2>Envios a todo el pais</h2>
+        <p>
+          Las hamburgesas mas hongeadas del mundo, envios por correo argentino a todo el pais, depende la distancia es el pegue del hongo.
+        </p>
+      </div>
+    </div>
+    <div class="grid">
+      <div class="icon">
+        <i class="fa fa-3x fa-battery-full" aria-hidden="true"></i>
+      </div>
+      <div class="desc">
+        <h2>Abierto 24hs</h2>
+        <p>
+          Disponibles en todos los paises 24hs para que bajonees una burger.
+        </p>
+      </div>
+    </div>
+  </section>
+<!-- pppppppppppppppppppppppppppppppppppppppppppp -->
+
+      </div>
+    </section>
+    <section>
+     <div class="info_compras">
+         <div>
+          <h3>hola</h3>
+           <p>Inicio</p>
+        </div>
+        <div class="divisor_tienda">|</div>
+         <div>
+          <h3>hola</h3>
+           <p>Remeras</p>
+       </div>
+       <div class="divisor_tienda">|</div>
+       <div>
+        <h3>hola</h3>
+         <p>Buzos</p>
+      </div>
+     </div>
+  </section>
     </main>
 
-    <footer class="footer_inicio">
-      <section>
-        <div class="flex_icons">
-          <span data-aos="zoom-in" class="flex_icons">
-            <a class="logo_ig" href="#">
-              <i class="fa-brands fa-instagram"></i>
-            </a>
-            <p class="p_ig">@Suspicions</p>
-          </span>
+    <footer class="footer-distributed">
+      <div class="footer-left">
+        <h3 class="sobre_suspicions1">
+          Sobre:
+          <span
+            data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom"
+            class="sobre_suspicions2"
+          >
+            Suspicions</span
+          >
+        </h3>
 
-          <span data-aos="zoom-in" class="flex_icons">
-            <a class="logo_wpp" href="#">
-              <i class="fa-brands fa-whatsapp"></i>
-            </a>
-            <p class="p_wpp">+54 11 23456789</p>
-          </span>
-        </div>
-      </section>
+        <p class="footer-links">
+          <a href="../index.html">Inicio</a>
+          |
+          <a href="#">Remeras</a>
+          |
+          <a href="buzos.html">Buzos</a>
+          |
+          <a href="pantalones.html">Pantalones</a>
+          |
+          <a href="contacto.html">Contacto</a>
+        </p>
 
-      <div class="contacto">
-        <a class="color_contacto" href="contacto.html">Contacto</a>
+        <p class="footer-company-name">
+          Copyright © 2023 Suspicions - Todos los derechos reservados
+          <br />
+          Creado por Tomas Carnezis
+        </p>
       </div>
+
+      <div class="footer-center">
+        <div>
+          <i
+            class="fa fa-map-marker fa_color animate__animated animate__pulse"
+          ></i>
+          <p>
+            <span>Avenida Hipólito Yrigoyen al 12598 </span>
+            Adrogue, Buenos Aires, Argentina
+          </p>
+        </div>
+
+        <div>
+          <i class="fa fa-phone fa_color animate__animated animate__pulse"></i>
+          <p>+54 11 23456789</p>
+        </div>
+        <div>
+          <i
+            class="fa fa-envelope fa_color animate__animated animate__pulse"
+          ></i>
+          <p>
+            <a href="#">SuspicionsArg@gmail.com</a>
+          </p>
+        </div>
+      </div>
+      <div class="footer-right">
+        <p class="footer-company-about">
+          <span>Sobre nosotros</span>
+          Somos una tienda de ropa que venimos a renovar la moda y vestirte con
+          la mejor onda. Contamos con un local en Adrogue con los mejores
+          precios y la mejor calidad para que tus prendas sean unicas.
+        </p>
+        <div class="footer-icons">
+          <a href="#"><i class="fa fa-facebook"></i></a>
+          <a href="#"><i class="fa fa-twitter"></i></a>
+          <a href="#"><i class="fa fa-instagram"></i></a>
+        </div>
+      </div>
+    </section>
     </footer>
 
     <script

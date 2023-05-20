@@ -49,6 +49,18 @@
       rel="stylesheet"
     />
     <!-- Google fonts -->
+    <!-- footer -->
+    <link
+      rel="stylesheet"
+      href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"
+    />
+
+    <link
+      href="http://fonts.googleapis.com/css?family=Cookie"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- footer -->
     <title>suspicions contacto</title>
   </head>
   <body>
@@ -56,14 +68,15 @@
       <h1 class="titulo">Suspicions</h1>
 
       <nav>
-        <div class="buscador_dos">
+        <form class="search" action="">
           <input
-            class="buscador"
-            type="text"
-            name="buscador"
+            class="input_search"
+            type="search"
             placeholder="Buscar..."
+            required
           />
-        </div>
+          <button class="button_search" type="submit">Search</button>
+        </form>
 
         <ul class="nav_bar_dos">
           <li class="nav_bar_uno">
@@ -89,56 +102,114 @@
       <p class="p_contacto">
         Contactate con nosotros para resolver <br />
         cualquier duda o problema mediante nuestro <br />
-        Instagram o por Whatsapp
+        Instagram o por Whatsapp.
       </p>
 
       <div class="container">
-        <div class="flex_contacto">
-          <img
-            class="logo_pequeno"
-            src="../images/logo_ig.png"
-            alt="logo instagram"
-          />
-          <a class="redes_contacto" href="#">@Suspicions</a>
-          <p class="redes_contacto margin_contacto">✦</p>
-          <img
-            class="logo_pequeno"
-            src="../images/logo_wpp.png"
-            alt="logo whatsapp"
-          />
-          <a class="redes_contacto" href="#">+54 11 23456789</a>
+        <div>
+          <div class="suspicions_contact_page">
+             <p class="p_suspicions_contact_page">@Suspicions</p>
+            </div>
+          <div class="flex_contacto">
+            <p class="logos_contact_page"> <a class="logos_contact_page2" href="#"><i class="fa-brands fa-square-instagram"></i></a></i></p>
+            <p class="logos_contact_page"><a class="logos_contact_page2" href="#"><i class="fa-brands fa-square-whatsapp"></i></a></p>
+            <p class="logos_contact_page"><a class="logos_contact_page2" href="#"><i class="fa-brands fa-square-twitter"></i></a></p>
+            <p class="logos_contact_page"><a class="logos_contact_page2" href="#"><i class="fa-solid fa-envelope"></i></a></p>
+          </div>
+
         </div>
       </div>
-
+        <div class="margin_contacto3">
       <div class="redes_contacto flex_contacto margin_contacto2">
         Respondemos consultas de lunes a viernes de 15:00 hs a 19:00 hs.
       </div>
       <div class="redes_contacto flex_contacto margin_contacto2">
         vamos a responderte lo antes posible.
       </div>
+    </div>
+
+      <form class="form_contact_page">
+        <h2 class="h2_contact_page">CONTACTATE CON NOSOTROS</h2>
+        <p class="p_contact_page" type="Nombre:"><input class="input_contact_page" placeholder="Escribe tu nombre aqui..."></input></p>
+        <p class="p_contact_page" type="Mail:"><input class="input_contact_page" placeholder="Dinos como contactarte..."></input></p>
+        <p class="p_contact_page" type="Mensaje / consulta:"><input class="input_contact_page" placeholder="Que nos quieres decir..."></input></p>
+        <button class="button_contact_page">Enviar Mensaje</button>
+        <div class="div_contact_page">
+          <span class="span_contact_page fa fa-phone"></span>+54 11 23456789
+          <span class="span_contact_page fa fa-envelope-o"></span> SuspicionsArg@gmail.com
+        </div>
+      </form>
+
     </main>
 
-    <footer class="footer_inicio">
-      <section>
-        <div class="flex_icons">
-          <span data-aos="zoom-in" class="flex_icons">
-            <a class="logo_ig" href="#">
-              <i class="fa-brands fa-instagram"></i>
-            </a>
-            <p class="p_ig">@Suspicions</p>
-          </span>
+    <footer class="footer-distributed">
+      <div class="footer-left">
+        <h3 class="sobre_suspicions1">
+          Sobre:
+          <span
+            data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom"
+            class="sobre_suspicions2"
+          >
+            Suspicions</span
+          >
+        </h3>
 
-          <span data-aos="zoom-in" class="flex_icons">
-            <a class="logo_wpp" href="#">
-              <i class="fa-brands fa-whatsapp"></i>
-            </a>
-            <p class="p_wpp">+54 11 23456789</p>
-          </span>
+        <p class="footer-links">
+          <a href="../index.html">Inicio</a>
+          |
+          <a href="remeras.html">Remeras</a>
+          |
+          <a href="buzos.html">Buzos</a>
+          |
+          <a href="pantalones.html">Pantalones</a>
+          |
+          <a href="#">Contacto</a>
+        </p>
+
+        <p class="footer-company-name">
+          Copyright © 2023 Suspicions - Todos los derechos reservados
+          <br />
+          Creado por Tomas Carnezis
+        </p>
+      </div>
+
+      <div class="footer-center">
+        <div>
+          <i
+            class="fa fa-map-marker fa_color animate__animated animate__pulse"
+          ></i>
+          <p>
+            <span>Avenida Hipólito Yrigoyen al 12598 </span>
+            Adrogue, Buenos Aires, Argentina
+          </p>
         </div>
-      </section>
 
-      <div class="contacto">
-        <a class="color_contacto" href="contacto.html">Contacto</a>
+        <div>
+          <i class="fa fa-phone fa_color animate__animated animate__pulse"></i>
+          <p>+54 11 23456789</p>
+        </div>
+        <div>
+          <i
+            class="fa fa-envelope fa_color animate__animated animate__pulse"
+          ></i>
+          <p>
+            <a href="#">SuspicionsArg@gmail.com</a>
+          </p>
+        </div>
+      </div>
+      <div class="footer-right">
+        <p class="footer-company-about">
+          <span>Sobre nosotros</span>
+          Somos una tienda de ropa que venimos a renovar la moda y vestirte con
+          la mejor onda. Contamos con un local en Adrogue con los mejores
+          precios y la mejor calidad para que tus prendas sean unicas.
+        </p>
+        <div class="footer-icons">
+          <a href="#"><i class="fa fa-facebook"></i></a>
+          <a href="#"><i class="fa fa-twitter"></i></a>
+          <a href="#"><i class="fa fa-instagram"></i></a>
+        </div>
       </div>
     </footer>
 

@@ -1,7 +1,7 @@
 /* .................... TIENDA .................... */
 
 .main_ventas {
-  background-image: url("../images/fondo_blanco_3.webp");
+  background-image: url("../images/susan-wilkinson-azul2.webp");
   background-size: cover;
   background-position: center;
   border-radius: 0;
@@ -10,26 +10,37 @@
 .articulos {
   @include flex-general(column, center);
   flex: 0 1 180px;
-  border: 1px solid black;
+  height: 360px;
+  border: 1px solid rgba(0, 0, 0, 0.137);
   border-radius: 1rem;
   padding: 1rem;
 }
 
 .tienda_subtitulo {
-  margin: 2rem 0 0 0;
+  margin: auto;
+  padding: 20px 0 20px 0;
   font-family: "pirata one", cursive;
   text-decoration: underline 3px $rojo2;
+  text-shadow: 1px 1px #18181881, 2px 2px rgba(59, 59, 59, 0.39);
 }
 
 .seccion_venta {
   @include flex-general(row, center);
   gap: 1rem;
-  margin: 1rem 0;
+}
+
+.ultima_seccion_venta {
+  margin: 0 0 1rem 0;
 }
 
 .articulos_color {
   background-color: white;
   font-size: 120%;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.137),
+    3px 3px 10px rgba(0, 0, 0, 0.207), -3px -3px 10px rgba(0, 0, 0, 0.207),
+    -3px -3px 10px rgba(0, 0, 0, 0.207), -3px 3px 10px rgba(0, 0, 0, 0.207),
+    3px -3px 10px rgba(0, 0, 0, 0.207), 3px -3px 10px rgba(0, 0, 0, 0.207),
+    -3px 3px 10px rgba(0, 0, 0, 0.207);
 }
 
 .articulos .buzos {
@@ -53,16 +64,108 @@
   padding: 0.5rem;
   border: none;
   border-radius: 1rem;
-  font-size: 1.2rem;
+  font-size: 0.9rem;
   cursor: pointer;
+
+  &:hover {
+    animation: shadow-drop-center 0.4s linear both;
+  }
+  @keyframes shadow-drop-center {
+    0% {
+      box-shadow: 0 0 0 0 transparent;
+    }
+    100% {
+      box-shadow: 0 0 20px 0 rgba(8, 8, 8, 0.55);
+    }
+  }
 }
 
 .tienda_espacio {
-  margin: 0 0 2rem 0;
+  margin: 0 0 0.8rem 0;
   text-align: center;
+  font-size: 90%;
 }
 
 .tienda_titulo {
   text-decoration: underline;
   color: black;
+  font-size: 100%;
+}
+
+.info_compras {
+  @include flex-general(row, center);
+}
+
+.divisor_tienda {
+  font-size: 500%;
+  display: flex;
+
+  justify-content: flex-start;
+  float: right;
+  flex-direction: column;
+  text-align: center;
+  margin: 0 5rem;
+}
+
+.container_tienda {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+#features {
+  margin-top: 30px;
+}
+
+.container {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.grid {
+  display: flex;
+}
+
+#features {
+  margin-top: 30px;
+}
+
+#features .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 125px;
+  width: 20vw;
+  color: darkorange;
+}
+
+@media (max-width: 550px) {
+  #features .icon {
+    display: none;
+  }
+}
+
+#features .desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 125px;
+  width: 80vw;
+  padding: 5px;
+}
+
+@media (max-width: 550px) {
+  #features .desc {
+    width: 100%;
+    text-align: center;
+    padding: 0;
+    height: 150px;
+  }
+}
+
+@media (max-width: 650px) {
+  #features {
+    margin-top: 0;
+  }
 }

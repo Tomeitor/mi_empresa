@@ -45,6 +45,18 @@
       rel="stylesheet"
     />
     <!-- Google fonts -->
+    <!-- footer -->
+    <link
+      rel="stylesheet"
+      href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"
+    />
+
+    <link
+      href="http://fonts.googleapis.com/css?family=Cookie"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- footer -->
     <title>suspicions buzos</title>
   </head>
   <body>
@@ -53,14 +65,15 @@
       
       <nav>
 
-        <div class="buscador_dos">
+        <form class="search" action="">
           <input
-          class="buscador"
-          type="text"
-          name="buscador"
-          placeholder="Buscar..."
+            class="input_search"
+            type="search"
+            placeholder="Buscar..."
+            required
           />
-        </div>
+          <button class="button_search" type="submit">Search</button>
+        </form>
 
         <ul class="nav_bar_dos">
           <li class="nav_bar_uno"><a class="color_a" href="../index.html">Inicio</a></li>
@@ -73,71 +86,365 @@
     </header>
 
     <main class="main_ventas">
-      <div class="articulos">
-      <section class="seccion_venta">
-        <article class="articulos articulos_color">
-          <h2>buzo apache gris</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore qui tenetur dolorem est commodi!</p>
-          
-          <img class="buzos" src="../images/buzo_apache_gris.webp" alt="buzo apache gris" />
-          <button>COMPRAR</button>
-        </article>
-      
-        <article class="articulos articulos_color">
-          <h2>buzo come as you are</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore qui tenetur dolorem est commodi!</p>
-          
-          <img class="buzos" src="../images/buzo_come_as_you_are.webp" alt="buzo come as you are"/>
-          <button>COMPRAR</button>
-        </article>
-      
-        <article class="articulos articulos_color">
-          <h2>buzo dont belong</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore qui tenetur dolorem est commodi!</p>
-          
-          <img class="buzos" src="../images/buzo_dont_belong.webp" alt="buzo dont belong" />
-          <button>COMPRAR</button>
-        </article>
-      
-        <article class="articulos articulos_color">
-          <h2>buzo full gothic</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore qui tenetur dolorem est commodi!</p>
-          
-          <img class="buzos" src="../images/buzo_full_gothic.webp" alt="buzo full gothic" />
-          <p>precio</p>
-          <button>COMPRAR</button>
-        </article>
+      <section>
+      <div>
+        <h2
+          class="container tienda_subtitulo shadow-drop-center animate__animated animate__pulse"
+        >
+         Abrigos:
+        </h2>
+        <div class="seccion_venta">
+          <!-- Seccion 1 -->
+          <div class="seccion_venta">
+            <article class="articulos articulos_color">
+              <a href="#">
+                <img
+                  data-aos="zoom-in"
+                  class="buzos"
+                  src="../images/hoodie_sensitive.webp"
+                  alt="hoodie sensitive"
+                />
+                <h4 class="tienda_espacio tienda_titulo">
+                  hoodie: <br />
+                  Sensitive
+                </h4>
+              </a>
 
-<!-- . -->
+              <p class="tienda_espacio">$13.700</p>
 
-    
+              <a href="#" class="a_comprar btn btn-outline-dark"> Comprar </a>
+            </article>
 
-        <!-- . -->
+            <article class="articulos articulos_color">
+              <a href="#">
+                <img
+                  data-aos="zoom-in"
+                  class="buzos"
+                  src="../images/hoodie_goat.webp"
+                  alt="hoodie goat"
+                />
+                <h4 class="tienda_espacio tienda_titulo">
+                  Hoodie: <br />
+                  Goat
+                </h4>
+              </a>
+              <p class="tienda_espacio">$13.700</p>
+              <a href="#" class="a_comprar btn btn-outline-dark"> Comprar </a>
+            </article>
 
-      </div>
+            <article class="articulos articulos_color">
+              <a href="#">
+                <img
+                  data-aos="zoom-in"
+                  class="buzos"
+                  src="../images/hoodie_not_real_naranja.webp"
+                  alt="hoodie not real naranja"
+                />
+                <h4 class="tienda_espacio tienda_titulo">
+                  Hoodie: <br />
+                  Not real
+                </h4>
+              </a>
+              <p class="tienda_espacio">$13.700</p>
+              <a href="#" class="a_comprar btn btn-outline-dark"> Comprar </a>
+            </article>
+
+            <article class="articulos articulos_color">
+              <a href="#">
+                <img
+                  data-aos="zoom-in"
+                  class="buzos"
+                  src="../images/hoodie_21.webp"
+                  alt="hoodie 21"
+                />
+                <h4 class="tienda_espacio tienda_titulo">
+                  Hoodie: <br />
+                  Number 21
+                </h4>
+              </a>
+              <p class="tienda_espacio">$13.700</p>
+              <a href="#" class="a_comprar btn btn-outline-dark"> Comprar </a>
+            </article>
+          </div>
+          <!-- Seccion 1 -->
+
+          <!-- Seccion 2 -->
+          <div class="seccion_venta">
+            <article class="articulos articulos_color">
+              <a href="#">
+                <img
+                  data-aos="zoom-in"
+                  class="buzos"
+                  src="../images/hoodie_hunt.webp"
+                  alt="hoodie hunt"
+                />
+                <h4 class="tienda_espacio tienda_titulo">
+                  Hoodie: <br />
+                  Hunt
+                </h4>
+              </a>
+              <p class="tienda_espacio">$13.700</p>
+              <a href="#" class="a_comprar btn btn-outline-dark"> Comprar </a>
+            </article>
+
+            <article class="articulos articulos_color">
+              <a href="#">
+                <img
+                  data-aos="zoom-in"
+                  class="buzos"
+                  src="../images/hoodie_allergic.webp"
+                  alt="hoodie alergic"
+                />
+                <h4 class="tienda_espacio tienda_titulo">
+                  Hoodie: <br />Alergic
+                </h4>
+              </a>
+              <p class="tienda_espacio">$13.700</p>
+              <a href="#" class="a_comprar btn btn-outline-dark"> Comprar </a>
+            </article>
+
+            <article class="articulos articulos_color">
+              <a href="#">
+                <img
+                  data-aos="zoom-in"
+                  class="buzos"
+                  src="../images/hoodie_keep_it_simple.webp"
+                  alt="hoodie keep it simple"
+                />
+                <h4 class="tienda_espacio tienda_titulo">
+                  Hoodie: <br />Keep it simple
+                </h4>
+              </a>
+              <p class="tienda_espacio">$13.700</p>
+              <a href="#" class="a_comprar btn btn-outline-dark"> Comprar </a>
+            </article>
+
+            <article class="articulos articulos_color">
+              <a href="#">
+                <img
+                  data-aos="zoom-in"
+                  class="buzos"
+                  src="../images/hoodie_bstrd_is_dead.webp"
+                  alt="hoodie bastard is dead"
+                />
+                <h4 class="tienda_espacio tienda_titulo">
+                  Hoodie: <br />Bastard is dead
+                </h4>
+              </a>
+              <p class="tienda_espacio">$13.700</p>
+
+              <a href="#" class="a_comprar btn btn-outline-dark"> Comprar </a>
+            </article>
+          </div>
+          <!-- Seccion 2 -->
+
+          <!-- Seccion 3 -->
+          <div class="seccion_venta">
+            <article class="articulos articulos_color">
+              <a href="#">
+                <img
+                  data-aos="zoom-in"
+                  class="buzos"
+                  src="../images/hoodie_og_trash.webp"
+                  alt="hoodie og trash"
+                />
+                <h4 class="tienda_espacio tienda_titulo">
+                  Hoodie: <br />Og trash
+                </h4>
+              </a>
+              <p class="tienda_espacio">$13.700</p>
+              <a href="#" class="a_comprar btn btn-outline-dark"> Comprar </a>
+            </article>
+
+            <article class="articulos articulos_color">
+              <a href="#">
+                <img
+                  data-aos="zoom-in"
+                  class="buzos"
+                  src="../images/campera_justfly.webp"
+                  alt="campera justfly"
+                />
+                <h4 class="tienda_espacio tienda_titulo">
+                  Campera: <br />Justyfly
+                </h4>
+              </a>
+              <p class="tienda_espacio">$12.999</p>
+              <a href="#" class="a_comprar btn btn-outline-dark"> Comprar </a>
+            </article>
+
+            <article class="articulos articulos_color">
+              <a href="#">
+                <img
+                  data-aos="zoom-in"
+                  class="buzos"
+                  src="../images/hoodie_b4st4rd.webp"
+                  alt="hoodie b4st4rd"
+                />
+                <h4 class="tienda_espacio tienda_titulo">
+                  Hoodie: <br />B4st4rd
+                </h4>
+              </a>
+              <p class="tienda_espacio">$13.700</p>
+              <a href="#" class="a_comprar btn btn-outline-dark"> Comprar </a>
+            </article>
+
+            <article class="articulos articulos_color">
+              <a href="#">
+                <img
+                  data-aos="zoom-in"
+                  class="buzos"
+                  src="../images/hoodie_13.webp"
+                  alt="hoodie 13"
+                />
+                <h4 class="tienda_espacio tienda_titulo">
+                  Hoodie: <br />Number 13
+                </h4>
+              </a>
+              <p class="tienda_espacio">$13.700</p>
+              <a href="#" class="a_comprar btn btn-outline-dark"> Comprar </a>
+            </article>
+          </div>
+          <!-- seccion 3 -->
+
+          <!-- Seccion 4 -->
+          <div class="seccion_venta ultima_seccion_venta">
+            <article class="articulos articulos_color">
+              <a href="#">
+                <img
+                  data-aos="zoom-in"
+                  class="buzos"
+                  src="../images/buzo_apache_gris.webp"
+                  alt="buzo apache gris"
+                />
+                <h4 class="tienda_espacio tienda_titulo">
+                  Hoodie: <br />
+                  Apache gris
+                </h4>
+              </a>
+              <p class="tienda_espacio">$12.400</p>
+              <a href="#" class="a_comprar btn btn-outline-dark"> Comprar </a>
+            </article>
+
+            <article class="articulos articulos_color">
+              <a href="#">
+                <img
+                  data-aos="zoom-in"
+                  class="buzos"
+                  src="../images/buzo_come_as_you_are.webp"
+                  alt="buzo come as you are"
+                />
+                <h4 class="tienda_espacio tienda_titulo">
+                  Buzo: <br /> Come as you are
+                </h4>
+              </a>
+              <p class="tienda_espacio">$12.400</p>
+              <a href="#" class="a_comprar btn btn-outline-dark"> Comprar </a>
+            </article>
+
+            <article class="articulos articulos_color">
+              <a href="#">
+                <img
+                  data-aos="zoom-in"
+                  class="buzos"
+                  src="../images/buzo_dont_belong.webp"
+                  alt="buzo dont belong"
+                />
+                <h4 class="tienda_espacio tienda_titulo">
+                  Buzo: <br />Dont belong
+                </h4>
+              </a>
+              <p class="tienda_espacio">$7.999</p>
+              <a href="#" class="a_comprar btn btn-outline-dark"> Comprar </a>
+            </article>
+
+            <article class="articulos articulos_color">
+              <a href="#">
+                <img
+                  data-aos="zoom-in"
+                  class="buzos"
+                  src="../images/buzo_full_gothic.webp"
+                  alt="buzo full gothic"
+                />
+                <h4 class="tienda_espacio tienda_titulo">
+                  Buzo <br />Full gothic
+                </h4>
+              </a>
+              <p class="tienda_espacio">$12.400</p>
+
+              <a href="#" class="a_comprar btn btn-outline-dark"> Comprar </a>
+            </article>
+          </div>
+          <!-- Seccion 4 -->
     </main>
 
-    <footer class="footer_inicio">
-      <section>
-        <div class="flex_icons">
-          <span data-aos="zoom-in" class="flex_icons">
-            <a class="logo_ig" href="#">
-              <i class="fa-brands fa-instagram"></i>
-            </a>
-            <p class="p_ig">@Suspicions</p>
-          </span>
+    <footer class="footer-distributed">
+      <div class="footer-left">
+        <h3 class="sobre_suspicions1">
+          Sobre:
+          <span
+            data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom"
+            class="sobre_suspicions2"
+          >
+            Suspicions</span
+          >
+        </h3>
 
-          <span data-aos="zoom-in" class="flex_icons">
-            <a class="logo_wpp" href="#">
-              <i class="fa-brands fa-whatsapp"></i>
-            </a>
-            <p class="p_wpp">+54 11 23456789</p>
-          </span>
+        <p class="footer-links">
+          <a href="../index.html">Inicio</a>
+          |
+          <a href="remeras.html">Remeras</a>
+          |
+          <a href="#">Buzos</a>
+          |
+          <a href="pantalones.html">Pantalones</a>
+          |
+          <a href="contacto.html">Contacto</a>
+        </p>
+
+        <p class="footer-company-name">
+          Copyright © 2023 Suspicions - Todos los derechos reservados
+          <br />
+          Creado por Tomas Carnezis
+        </p>
+      </div>
+
+      <div class="footer-center">
+        <div>
+          <i
+            class="fa fa-map-marker fa_color animate__animated animate__pulse"
+          ></i>
+          <p>
+            <span>Avenida Hipólito Yrigoyen al 12598 </span>
+            Adrogue, Buenos Aires, Argentina
+          </p>
         </div>
-      </section>
 
-      <div class="contacto">
-        <a class="color_contacto" href="contacto.html">Contacto</a>
+        <div>
+          <i class="fa fa-phone fa_color animate__animated animate__pulse"></i>
+          <p>+54 11 23456789</p>
+        </div>
+        <div>
+          <i
+            class="fa fa-envelope fa_color animate__animated animate__pulse"
+          ></i>
+          <p>
+            <a href="#">SuspicionsArg@gmail.com</a>
+          </p>
+        </div>
+      </div>
+      <div class="footer-right">
+        <p class="footer-company-about">
+          <span>Sobre nosotros</span>
+          Somos una tienda de ropa que venimos a renovar la moda y vestirte con
+          la mejor onda. Contamos con un local en Adrogue con los mejores
+          precios y la mejor calidad para que tus prendas sean unicas.
+        </p>
+        <div class="footer-icons">
+          <a href="#"><i class="fa fa-facebook"></i></a>
+          <a href="#"><i class="fa fa-twitter"></i></a>
+          <a href="#"><i class="fa fa-instagram"></i></a>
+        </div>
       </div>
     </footer>
 

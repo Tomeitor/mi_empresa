@@ -12,10 +12,13 @@ body {
 
 header {
   background-color: $gris;
-  padding: 0 0 1rem 0;
+  padding: 0 0 0rem 0;
   top: 0;
   z-index: 2;
   grid-area: header;
+  box-shadow: -2px 2px 2px 2px #181619d8, 2px 2px 2px 2px #181619d8,
+    -5px 5px 5px 5px #1816199d, 5px 5px 5px 5px #1816199d,
+    8px 8px 8px 8px #1816195d;
 }
 
 main {
@@ -30,16 +33,36 @@ footer {
   font-family: "pirata one", sans-serif;
   text-align: center;
   color: $rojo2;
-  margin: 1rem 0 1rem 0;
-  font-size: 220%;
+  margin: 0 0 1.3rem 0;
+  font-size: 420%;
+  text-shadow: 3px 3px #8a000081, 5px 5px rgba(56, 0, 0, 0.39);
+
+  animation: fly 2s infinite;
+  animation-timing-function: ease-in-out;
+
+  @keyframes fly {
+    0% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(8px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+  }
 }
 
 .nav_bar_uno {
-  margin: auto;
+  margin: 10px 10px 0 10px;
+  text-align: center;
 }
 
 .nav_bar_dos {
   font-size: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .color_a {
@@ -48,20 +71,67 @@ footer {
   text-decoration: none;
   transition: color 0.3s;
   font-size: 120%;
+  text-shadow: 2px 2px #66666698, 3px 3px rgba(49, 49, 49, 0.315);
 
   &:hover {
     color: $rojo1;
     text-decoration: line-through;
+    text-shadow: 2px 2px #55000081, 3px 3px rgba(73, 0, 0, 0.39);
   }
 }
 
-.buscador {
-  vertical-align: middle;
-  text-align: left;
-  margin: 0 0 1rem 0;
-  resize: none;
-  font-size: 70%;
-  width: 12rem;
+.search {
+  width: 300px;
+  height: 31px;
+  margin: 15px auto;
+  background: #444;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.068);
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.137),
+    1px 1px 10px rgba(0, 0, 0, 0.137), -1px -1px 10px rgba(0, 0, 0, 0.137),
+    -1px -1px 10px rgba(0, 0, 0, 0.137), -1px 1px 10px rgba(0, 0, 0, 0.137),
+    1px -1px 10px rgba(0, 0, 0, 0.137), 1px -1px 10px rgba(0, 0, 0, 0.137),
+    -1px 1px 10px rgba(0, 0, 0, 0.137);
+
+  .input_search {
+    width: 172px;
+    padding: 2.5px 9px;
+    float: left;
+    color: #ccc;
+    border: 0;
+    background: transparent;
+    border-radius: 3px 0 0 3px;
+    &:focus {
+      outline: 0;
+      background: transparent;
+    }
+  }
+
+  .button_search {
+    position: relative;
+    float: right;
+    border: 0;
+    padding: 0;
+    cursor: pointer;
+    height: 30px;
+    width: 75px;
+    color: #ccc;
+    background: transparent;
+    border-left: 1px solid rgba(58, 58, 58, 0.2);
+    border-radius: 0 3px 3px 0;
+    transition: color, background 0.5s;
+    &:hover {
+      color: #33383b;
+      background: #cfcfcf;
+    }
+    &:active {
+      box-shadow: 0px 0px 12px 0px rgba(225, 225, 225, 1);
+    }
+    &:focus {
+      outline: 0;
+    }
+  }
 }
 
 .buscador_dos {
@@ -71,22 +141,33 @@ footer {
 /* _-_MAIN_-_ */
 
 .main_inicio {
-  background-image: url("../images/fondo_ilusion_optica.jpg");
+  background-image: url("../images/susan-wilkinson-negro2.webp");
   background-size: cover;
   background-position: center;
 }
 
 .titulo_centrado {
   text-align: center;
-  padding: 1rem;
+  padding: 20px 0 0 0;
+  margin: 0 0 2rem 0;
   background-color: black;
   color: white;
   font-size: 120%;
+  font-family: "Vollkorn", serif;
+  text-shadow: 2px 2px rgba(117, 117, 117, 0.658);
+  box-shadow: -2px 2px 2px 2px rgba(0, 0, 0, 0.959),
+    2px 2px 2px 2px rgba(0, 0, 0, 0.966), -5px 5px 5px 5px rgba(0, 0, 0, 0.719),
+    5px 5px 5px 5px rgba(0, 0, 0, 0.678), 8px 8px 8px 8px rgba(0, 0, 0, 0.493);
 }
 
 .container-carousel {
-  max-width: 800px;
-  margin: 0 auto;
+  max-width: 100rem;
+  margin: 0 auto 3rem auto;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.12),
+    10px 10px 10px rgba(0, 0, 0, 0.24), -10px -10px 10px rgba(0, 0, 0, 0.12),
+    -10px -10px 10px rgba(0, 0, 0, 0.24), -10px 10px 10px rgba(0, 0, 0, 0.12),
+    10px -10px 10px rgba(0, 0, 0, 0.24), 10px -10px 10px rgba(0, 0, 0, 0.12),
+    -10px 10px 10px rgba(0, 0, 0, 0.24);
 }
 
 .carousel-inner {
@@ -109,47 +190,330 @@ footer {
   gap: 10px;
 }
 
+/* pruebaaaaaaaaaa */
+
+.imagenes_inicio3 {
+  @include flex-general(row, center);
+}
+
+.imagenes_inicio4 {
+  width: 14rem;
+  margin: 1rem 0;
+  max-width: 100%;
+  border-radius: 0.2rem;
+}
+
+.imagenes_inicio5 {
+  @include flex-general(row, center);
+}
+
+.p_imagenes {
+  color: $rojo2;
+  font-size: 200%;
+}
+
+/* a */
+
+.body_wrapper {
+  align-items: center;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  display: flex;
+  padding: 20px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  background-color: #ffffffe8;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.12),
+    10px 10px 10px rgba(0, 0, 0, 0.24);
+  margin: 4rem 1rem 1rem 1rem;
+}
+
+.primer_section_inicio {
+  margin: 3rem 0 0 0;
+}
+
+.body_inner_left_holder {
+  width: 50%;
+  margin: 0 2px;
+  padding-top: 10px;
+}
+.body_inner_left {
+  width: 100%;
+  border-radius: 3px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.137),
+    3px 3px 10px rgba(0, 0, 0, 0.137), -3px -3px 10px rgba(0, 0, 0, 0.137),
+    -3px -3px 10px rgba(0, 0, 0, 0.137), -3px 3px 10px rgba(0, 0, 0, 0.137),
+    3px -3px 10px rgba(0, 0, 0, 0.137), 3px -3px 10px rgba(0, 0, 0, 0.137),
+    -3px 3px 10px rgba(0, 0, 0, 0.137);
+}
+.body_inner_right {
+  display: flex;
+  width: 50%;
+  justify-content: flex-start;
+  float: right;
+  flex-direction: column;
+  text-align: center;
+  margin: 0 10px;
+}
+
+.size_h3_inicio {
+  font-size: 250%;
+  padding: 0 0 0.5rem 0;
+  color: $rojo2;
+  text-shadow: 1px 1px #27272765;
+
+  animation: fly 2s infinite;
+  animation-timing-function: ease-in-out;
+
+  @keyframes fly {
+    0% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(8px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+  }
+}
+
+.size_p_inicio {
+  color: rgba(7, 7, 7, 0.959);
+  font-size: 65%;
+  text-align: left;
+  font-family: "Libre Baskerville", serif;
+  text-shadow: 0.3px 0.3px #5a5a5a65;
+}
+
+.sobre_suspicions3 {
+  font: normal 42px "pirata one", cursive;
+  font-size: 140%;
+}
+
+/* a */
+/* pruebaaaaaaaaaa */
+
 /* _-_FOOTER_-_ */
 
-.footer_inicio {
+/* aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa */
+
+@import url("http://fonts.googleapis.com/css?family=Open+Sans:400,700");
+
+@media (max-height: 800px) {
+  footer {
+    position: static;
+  }
+}
+
+.footer-distributed {
   background-color: $gris;
-  color: white;
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  font: bold 16px sans-serif;
+  padding: 50px 50px 60px 50px;
 }
 
-.flex_icons {
-  @include flex-general(row, center);
-  padding: 1rem 0 0 0;
-  font-size: 120%;
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right {
+  display: inline-block;
+  vertical-align: top;
 }
 
-.p_ig {
-  padding: 0 3rem 0 0;
+/* Footer izquierda */
+
+.footer-distributed .footer-left {
+  width: 30%;
 }
 
-.logo_ig {
-  color: #ff5f7c;
-  margin: 0 1rem 0 2rem;
+.footer-distributed h3 {
+  color: #ffffff;
+  font: normal 36px "cookie", cursive;
+  margin: 0;
 }
 
-.p_wpp {
-  padding: 0 2rem 0 0;
+.sobre_suspicions2 {
+  font: normal 42px "pirata one", cursive;
 }
 
-.logo_wpp {
-  color: #20c67a;
-  margin: 0 1rem 1rem 1rem;
+.sobre_suspicions1 {
+  font: normal 25px "lobster", cursive;
 }
+
+/* logo */
+
+.footer-distributed .footer-left img {
+  width: 30%;
+}
+
+.footer-distributed h3 span {
+  color: $rojo2;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links {
+  color: #ffffff;
+  margin: 20px 0 12px;
+}
+
+.footer-distributed .footer-links a {
+  display: inline-block;
+  line-height: 1.8;
+  text-decoration: none;
+  color: inherit;
+}
+
+.footer-distributed .footer-company-name {
+  color: #8f9296;
+  font-size: 14px;
+  font-weight: normal;
+  margin: 0;
+}
+
+/* footer centro */
+
+.footer-distributed .footer-center {
+  width: 35%;
+}
+
+.footer-distributed .footer-center i {
+  background-color: #33383b;
+  color: #ffffff;
+  font-size: 25px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 42px;
+  margin: 10px 15px;
+  vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope {
+  font-size: 17px;
+  line-height: 38px;
+}
+
+.footer-distributed .footer-center p {
+  display: inline-block;
+  color: #ffffff;
+  vertical-align: middle;
+  margin: 0;
+}
+
+.footer-distributed .footer-center p span {
+  display: block;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 2;
+}
+
+.footer-distributed .footer-center p a {
+  color: $rojo2;
+  text-decoration: none;
+}
+
+/* Footer derecha */
+
+.footer-distributed .footer-right {
+  width: 30%;
+}
+
+.footer-distributed .footer-company-about {
+  line-height: 20px;
+  color: #92999f;
+  font-size: 13px;
+  font-weight: normal;
+  margin: 0;
+}
+
+.footer-distributed .footer-company-about span {
+  display: block;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons {
+  margin-top: 25px;
+}
+
+.fa_color {
+  color: $rojo2;
+
+  &:hover {
+    animation: shadow-drop-center 0.4s linear both;
+  }
+  @keyframes shadow-drop-center {
+    0% {
+      box-shadow: 0 0 0 0 transparent;
+    }
+    100% {
+      box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.55);
+    }
+  }
+}
+
+.footer-distributed .footer-icons a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  background-color: rgba(27, 26, 26, 0.562);
+  border-radius: 2px;
+
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 35px;
+
+  margin-right: 3px;
+  margin-bottom: 5px;
+
+  &:hover {
+    animation: shadow-drop-center 0.4s linear both;
+  }
+  @keyframes shadow-drop-center {
+    0% {
+      box-shadow: 0 0 0 0 transparent;
+    }
+    100% {
+      box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.55);
+    }
+  }
+}
+
+/* Codigo Responsive Footer */
+
+@media (max-width: 880px) {
+  .footer-distributed .footer-left,
+  .footer-distributed .footer-center,
+  .footer-distributed .footer-right {
+    display: block;
+    width: 100%;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  .footer-distributed .footer-center i {
+    margin-left: 0;
+  }
+}
+
+/* aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa */
 
 .contacto {
   @include flex-general(row, center);
   font-size: 120%;
-  padding: 1%;
 }
 
 .color_contacto {
   color: #3bb1ff;
   text-decoration: none;
-  margin: 0 0 1rem 0;
   transition: color 1s;
 
   &:hover {
@@ -157,3 +521,7 @@ footer {
     color: rgb(50, 241, 255);
   }
 }
+
+/* aaaaaaaaaa */
+
+/* aaaaaaaaaa */

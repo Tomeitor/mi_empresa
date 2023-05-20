@@ -46,10 +46,23 @@
 
     <!-- Google fonts -->
     <link
-      href="https://fonts.googleapis.com/css2?family=Bokor&family=Lobster&family=Pirata+One&family=Shrikhand&family=UnifrakturCook:wght@700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Bokor&family=Libre+Baskerville&family=Lobster&family=Pirata+One&family=Shrikhand&family=UnifrakturCook:wght@700&family=Vollkorn&display=swap"
       rel="stylesheet"
     />
     <!-- Google fonts -->
+
+    <!-- footer -->
+    <link
+      rel="stylesheet"
+      href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"
+    />
+
+    <link
+      href="http://fonts.googleapis.com/css?family=Cookie"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- footer -->
     <title>suspicions</title>
   </head>
 
@@ -57,16 +70,15 @@
     <header class="grid_item">
       <h1 class="titulo">Suspicions</h1>
       <nav>
-        <!-- aca habia un div sin cerrar -->
-
-        <div class="buscador_dos">
+        <form class="search" action="">
           <input
-            class="buscador"
-            type="text"
-            name="buscador"
+            class="input_search"
+            type="search"
             placeholder="Buscar..."
+            required
           />
-        </div>
+          <button class="button_search" type="submit">Search</button>
+        </form>
 
         <ul class="nav_bar_dos">
           <li class="nav_bar_uno">
@@ -100,7 +112,10 @@
             Tu tienda de ropa
           </h2>
 
-          <div class="container-carousel animate__animated animate__pulse">
+          <div
+            data-bs-theme="dark"
+            class="container-carousel animate__animated animate__pulse"
+          >
             <div id="carouselExampleIndicators" class="carousel slide">
               <div class="carousel-indicators">
                 <button
@@ -127,21 +142,21 @@
               <div class="carousel-inner">
                 <div class="carousel-item active">
                   <img
-                    src="images/carrusel1.jpg"
+                    src="images/slide_modelos3.webp"
                     class="d-block"
                     alt="modelo carrusel 1"
                   />
                 </div>
                 <div class="carousel-item">
                   <img
-                    src="images/carrusel2.jpg"
+                    src="images/slide_modelos2.webp"
                     class="d-block"
                     alt="modelo carrusel 2"
                   />
                 </div>
                 <div class="carousel-item">
                   <img
-                    src="images/carrusel3.jpg"
+                    src="images/slide_modelos1.webp"
                     class="d-block"
                     alt="modelo carrusel 3"
                   />
@@ -176,59 +191,197 @@
             </div>
           </div>
 
-          <div class="imagenes_inicio_dos">
-            <img
-              data-aos="zoom-in"
-              src="images/modelo_2.jpg"
-              alt="modelo con ropa 2"
-              class="imagenes_inicio"
-            />
-            <img
-              data-aos="zoom-in"
-              src="images/modelo_3.jpg"
-              alt="modelo con ropa 3"
-              class="imagenes_inicio"
-            />
+          <!-- prueba -->
+
+          <!-- a -->
+          <div
+            class="body_wrapper primer_section_inicio container"
+            data-aos="fade-up"
+            data-aos-duration="1500"
+          >
+            <div class="body_inner_left_holder">
+              <img class="body_inner_left" src="images/modelo_3.jpg" />
+            </div>
+            <div class="body_inner_right">
+              <h3
+                class="sobre_suspicions3 size_h3_inicio"
+                data-aos="fade-zoom-in"
+                data-aos-easing="ease-in-back"
+                data-aos-delay="500"
+                data-aos-offset="0"
+              >
+                Suspicions
+              </h3>
+              <p class="size_p_inicio">
+                ¡Bienvenido/a a Suspicions, el destino perfecto para encontrar
+                la moda que se adapta a tu estilo! En nuestra tienda, nos
+                enorgullece ofrecer una amplia selección de ropa, diseñada para
+                satisfacer todas tus necesidades de moda. Nuestro equipo está
+                comprometido en brindarte las últimas tendencias de la moda. En
+                nuestra tienda, encontrarás una variedad de estilos, colores y
+                diseños que se adaptan a diferentes gustos y personalidades.
+              </p>
+            </div>
           </div>
-          <div class="imagenes_inicio_dos">
-            <img
-              data-aos="zoom-in"
-              src="images/modelo_4.jpg"
-              alt="modelo con ropa 4"
-              class="imagenes_inicio"
-            />
-            <img
-              data-aos="zoom-in"
-              src="images/modelo_1.jpg"
-              alt="modelo con ropa 1"
-              class="imagenes_inicio"
-            />
+          <div
+            class="body_wrapper container"
+            data-aos="fade-up"
+            data-aos-duration="1500"
+          >
+            <div class="body_inner_right">
+              <h3
+                class="sobre_suspicions3 size_h3_inicio"
+                data-aos="fade-zoom-in"
+                data-aos-easing="ease-in-back"
+                data-aos-delay="500"
+                data-aos-offset="0"
+              >
+                Ropa para hombres y mujeres
+              </h3>
+              <p class="size_p_inicio">
+                Ofrecemos una amplia selección de ropa para hombres y mujeres,
+                desde tallas XS hasta XL. Encuentra el estilo perfecto que se
+                ajuste a tu personalidad y disfruta de una experiencia de compra
+                única. ¡Explora nuestra colección y descubre la moda que te
+                define!
+              </p>
+            </div>
+
+            <div class="body_inner_left_holder">
+              <img class="body_inner_left" src="images/modelo_2.jpg" />
+            </div>
           </div>
+          <div
+            class="body_wrapper container"
+            data-aos="fade-up"
+            data-aos-duration="1500"
+          >
+            <div class="body_inner_left_holder">
+              <img class="body_inner_left" src="images/modelo_4.jpg" />
+            </div>
+            <div class="body_inner_right">
+              <h3
+                class="size_h3_inicio sobre_suspicions3"
+                data-aos="fade-zoom-in"
+                data-aos-easing="ease-in-back"
+                data-aos-delay="500"
+                data-aos-offset="0"
+              >
+                Nuestro equipo de trabajo
+              </h3>
+              <p class="size_p_inicio">
+                Nuestra tienda se esfuerza por ofrecerte una experiencia de
+                compra excepcional. Nuestro amable personal está listo para
+                ayudarte a encontrar las prendas ideales que se ajusten a tu
+                estilo y te hagan sentir seguro/a y con confianza. Valoramos la
+                satisfacción del cliente y nos esforzamos por superar tus
+                expectativas en cada visita.
+              </p>
+            </div>
+          </div>
+          <div
+            class="body_wrapper container"
+            data-aos="fade-up"
+            data-aos-duration="1500"
+          >
+            <div class="body_inner_right">
+              <h3
+                class="size_h3_inicio sobre_suspicions3"
+                data-aos="fade-zoom-in"
+                data-aos-easing="ease-in-back"
+                data-aos-delay="500"
+                data-aos-offset="0"
+              >
+                Variedad
+              </h3>
+              <p class="size_p_inicio">
+                No importa si estás buscando una prenda clásica, un conjunto
+                moderno o accesorios para complementar tu look, nuestra tienda
+                tiene todo lo que necesitas. Ven y descubre nuestra colección de
+                ropa de calidad que abarca desde los tamaños más pequeños hasta
+                los más grandes. ¡Te invitamos a explorar y experimentar la moda
+                en nuestra tienda hoy mismo!
+              </p>
+            </div>
+            <div class="body_inner_left_holder">
+              <img class="body_inner_left" src="images/modelo_1.jpg" />
+            </div>
+          </div>
+          <!-- a -->
+
+          <!-- prueba -->
         </article>
       </section>
     </main>
 
-    <footer class="footer_inicio grid_item">
-      <section>
-        <div class="flex_icons">
-          <span data-aos="zoom-in" class="flex_icons">
-            <a class="logo_ig" href="#">
-              <i class="fa-brands fa-instagram"></i>
-            </a>
-            <p class="p_ig">@Suspicions</p>
-          </span>
+    <footer class="footer-distributed">
+      <div class="footer-left">
+        <h3 class="sobre_suspicions1">
+          Sobre:
+          <span
+            data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom"
+            class="sobre_suspicions2"
+          >
+            Suspicions</span
+          >
+        </h3>
 
-          <span data-aos="zoom-in" class="flex_icons">
-            <a class="logo_wpp" href="#">
-              <i class="fa-brands fa-whatsapp"></i>
-            </a>
-            <p class="p_wpp">+54 11 23456789</p>
-          </span>
+        <p class="footer-links">
+          <a href="#">Inicio</a>
+          |
+          <a href="pages/remeras.html">Remeras</a>
+          |
+          <a href="pages/buzos.html">Buzos</a>
+          |
+          <a href="pages/pantalones.html">Pantalones</a>
+          |
+          <a href="pages/contacto.html">Contacto</a>
+        </p>
+
+        <p class="footer-company-name">
+          Copyright © 2023 Suspicions - Todos los derechos reservados
+          <br />
+          Creado por Tomas Carnezis
+        </p>
+      </div>
+
+      <div class="footer-center">
+        <div>
+          <i
+            class="fa fa-map-marker fa_color animate__animated animate__pulse"
+          ></i>
+          <p>
+            <span>Avenida Hipólito Yrigoyen al 12598 </span>
+            Adrogue, Buenos Aires, Argentina
+          </p>
         </div>
-      </section>
 
-      <div class="contacto">
-        <a class="color_contacto" href="pages/contacto.html">Contacto</a>
+        <div>
+          <i class="fa fa-phone fa_color animate__animated animate__pulse"></i>
+          <p>+54 11 23456789</p>
+        </div>
+        <div>
+          <i
+            class="fa fa-envelope fa_color animate__animated animate__pulse"
+          ></i>
+          <p>
+            <a href="#">SuspicionsArg@gmail.com</a>
+          </p>
+        </div>
+      </div>
+      <div class="footer-right">
+        <p class="footer-company-about">
+          <span>Sobre nosotros</span>
+          Somos una tienda de ropa que venimos a renovar la moda y vestirte con
+          la mejor onda. Contamos con un local en Adrogue con los mejores
+          precios y la mejor calidad para que tus prendas sean unicas.
+        </p>
+        <div class="footer-icons">
+          <a href="#"><i class="fa fa-facebook"></i></a>
+          <a href="#"><i class="fa fa-twitter"></i></a>
+          <a href="#"><i class="fa fa-instagram"></i></a>
+        </div>
       </div>
     </footer>
 
